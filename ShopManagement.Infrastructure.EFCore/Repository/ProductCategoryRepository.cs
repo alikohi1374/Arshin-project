@@ -1,8 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Globalization;
 using System.Linq;
-using System.Linq.Expressions;
 using _0_Framework.Infrastructure;
 using ShopManagement.Application.Contracts.ProductCategory;
 using ShopManagement.Domain.ProductCategoryAgg;
@@ -50,6 +48,14 @@ namespace ShopManagement.Infrastructure.EFCore.Repository
 
             return query.OrderByDescending(x => x.Id).ToList();
 
+        }
+        public List<ProductCategoryViewModel> GetCategories()
+        {
+            return _context.ProductCategories.Select(x => new ProductCategoryViewModel
+            {
+                Id = x.Id,
+                Name = x.Name
+            }).ToList();
         }
 
     }

@@ -18,7 +18,7 @@ namespace ShopManagement.Application
         {
             var Operation = new OperationResult();
             if (_productCategoryRepository.Exist(x=>x.Name==command.Name))
-                return Operation.Failed("امکان ثبت دسته بندی تکراری وجود ندارد");
+                return Operation.Failed(ApplicationMessages.DuplicatedRecord );
             var slug = command.Slug.Slugify();
             var productcategory =new ProductCategory(command.Name,command.Description,command.Picture
            , command.Description,command.PictureAlt,command.Keywords,command.PictureTitle, slug);
@@ -33,10 +33,10 @@ namespace ShopManagement.Application
             var Operation = new OperationResult();
             var productCategory = _productCategoryRepository.Get(command.Id);
             if (productCategory == null)
-                return Operation.Failed("رکورد با اطلاعات درخوایت شده یافت نشد ، لطفا مجدد تلاش کنبد.");
+                return Operation.Failed(ApplicationMessages.RecordNotFound);
 
             if (_productCategoryRepository.Exist(x => x.Name == command.Name && x.Id != command.Id))
-                return Operation.Failed("یک دسته بندی با نام وارد شده موجود می باشد،لطفا مجدد تلاش کنید.");
+                return Operation.Failed(ApplicationMessages.DuplicatedRecord);
 
             var slug = command.Slug.Slugify();
             productCategory.Edit(command.Name,command.Description,command.Picture,command.PictureAlt,command.PictureTitle,command.Keywords,command.MetaDescription,slug);
@@ -52,6 +52,11 @@ namespace ShopManagement.Application
         public List<ProductCategoryViewModel> Search(ProductCategorySearchModel searchModel)
         {
             return _productCategoryRepository.Search(searchModel);
+        }
+
+        public List<ProductCategoryViewModel> GetProductCategories()
+        {
+            return _productCategoryRepository.GetCategories();
         }
     }
 }

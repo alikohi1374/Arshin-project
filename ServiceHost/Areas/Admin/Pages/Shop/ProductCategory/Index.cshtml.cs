@@ -24,6 +24,7 @@ namespace ServiceHost.Areas.Admin.Pages.Shop.ProductCategory
 
         public IActionResult OnGetCreate()
         {
+
             return Partial("./Create", new CreateProductCategory());
         }
 
