@@ -213,3 +213,6 @@ E:\ArshinWebSite\ServiceHost\bin\Debug\net5.0\DiscountManagement.Infrastructure.
 E:\ArshinWebSite\ServiceHost\obj\Debug\net5.0\Razor\Areas\Admin\Pages\Discount\CustomerDiscounts\Create.cshtml.g.cs
 E:\ArshinWebSite\ServiceHost\obj\Debug\net5.0\Razor\Areas\Admin\Pages\Discount\CustomerDiscounts\Edit.cshtml.g.cs
 E:\ArshinWebSite\ServiceHost\obj\Debug\net5.0\Razor\Areas\Admin\Pages\Discount\CustomerDiscounts\Index.cshtml.g.cs
+E:\ArshinWebSite\ServiceHost\obj\Debug\net5.0\Razor\Areas\Admin\Pages\Discount\ColleagueDiscounts\Create.cshtml.g.cs
+E:\ArshinWebSite\ServiceHost\obj\Debug\net5.0\Razor\Areas\Admin\Pages\Discount\ColleagueDiscounts\Edit.cshtml.g.cs
+E:\ArshinWebSite\ServiceHost\obj\Debug\net5.0\Razor\Areas\Admin\Pages\Discount\ColleagueDiscounts\Index.cshtml.g.cs
