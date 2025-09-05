@@ -2132,6 +2132,19 @@
           "lib/netstandard1.3/System.Xml.XmlSerializer.dll": {}
         }
       },
+      "01_ArshinQuery/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "ShopManagement.Infrastructure.EFCore": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/01_ArshinQuery.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/01_ArshinQuery.dll": {}
+        }
+      },
       "0_Framework/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
@@ -7333,6 +7346,11 @@
         "system.xml.xmlserializer.nuspec"
       ]
     },
+    "01_ArshinQuery/1.0.0": {
+      "type": "project",
+      "path": "../01_ArshinQuery/01_ArshinQuery.csproj",
+      "msbuildProject": "../01_ArshinQuery/01_ArshinQuery.csproj"
+    },
     "0_Framework/1.0.0": {
       "type": "project",
       "path": "../0_Framework/0_Framework.csproj",
@@ -7361,6 +7379,7 @@
   },
   "projectFileDependencyGroups": {
     "net5.0": [
+      "01_ArshinQuery >= 1.0.0",
       "Microsoft.Extensions.DependencyInjection.Abstractions >= 9.0.8",
       "ShopManagement.Application >= 1.0.0",
       "ShopManagement.Application.Contracts >= 1.0.0",
@@ -7399,6 +7418,9 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
+            "E:\\ArshinWebSite\\01_ArshinQuery\\01_ArshinQuery.csproj": {
+              "projectPath": "E:\\ArshinWebSite\\01_ArshinQuery\\01_ArshinQuery.csproj"
+            },
             "E:\\ArshinWebSite\\ShopManagement.Application.Contracts\\ShopManagement.Application.Contracts.csproj": {
               "projectPath": "E:\\ArshinWebSite\\ShopManagement.Application.Contracts\\ShopManagement.Application.Contracts.csproj"
             },

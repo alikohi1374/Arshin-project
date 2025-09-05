@@ -11,6 +11,8 @@ using ShopManagement.Domain.ProductPictureAgg;
 using ShopManagement.Domain.SlideAgg;
 using ShopManagement.Infrastructure.EFCore;
 using ShopManagement.Infrastructure.EFCore.Repository;
+using _01_ArshinQuery.Contracts.ProductCategory;
+using _01_ArshinQuery.Query;
 
 namespace ShopManagement.Configuration
 {
@@ -26,6 +28,10 @@ namespace ShopManagement.Configuration
             services.AddTransient<IProductPictureRepository, ProductPictureRepository>();
             services.AddTransient<ISlideApplication, SlideApplication>();
             services.AddTransient<ISlideRepository,SlideRepository>();
+
+
+
+            services.AddTransient<IProductCategoryQuery, ProductCategoryQuery>();
 
             services.AddDbContext<ShopContext>(x => x.UseSqlServer(ConnectionString));
         }

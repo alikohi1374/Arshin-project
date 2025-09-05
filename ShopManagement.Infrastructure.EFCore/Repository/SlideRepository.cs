@@ -4,6 +4,7 @@ using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using _0_Framework.Application;
 using _0_Framework.Infrastructure;
 using Microsoft.EntityFrameworkCore;
 using ShopManagement.Application.Contracts.Slide;
@@ -43,7 +44,7 @@ namespace ShopManagement.Infrastructure.EFCore.Repository
                 Title = x.Title,
                 Id = x.Id,
                 IsRemoved = x.IsRemoved,
-                CreationDate = x.CreationDate.ToString(CultureInfo.InvariantCulture)
+                CreationDate = x.CreationDate.ToFarsi()
                 
             }).OrderByDescending(x => x.Id).ToList();
         }

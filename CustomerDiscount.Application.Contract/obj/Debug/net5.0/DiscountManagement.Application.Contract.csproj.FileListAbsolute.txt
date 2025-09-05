@@ -1,0 +1,17 @@
+E:\ArshinWebSite\CustomerDiscount.Application.Contract\bin\Debug\net5.0\DiscountManagement.Application.Contract.deps.json
+E:\ArshinWebSite\CustomerDiscount.Application.Contract\bin\Debug\net5.0\DiscountManagement.Application.Contract.dll
+E:\ArshinWebSite\CustomerDiscount.Application.Contract\bin\Debug\net5.0\ref\DiscountManagement.Application.Contract.dll
+E:\ArshinWebSite\CustomerDiscount.Application.Contract\bin\Debug\net5.0\DiscountManagement.Application.Contract.pdb
+E:\ArshinWebSite\CustomerDiscount.Application.Contract\bin\Debug\net5.0\0_Framework.dll
+E:\ArshinWebSite\CustomerDiscount.Application.Contract\bin\Debug\net5.0\0_Framework.pdb
+E:\ArshinWebSite\CustomerDiscount.Application.Contract\obj\Debug\net5.0\DiscountManagement.Application.Contract.csproj.AssemblyReference.cache
+E:\ArshinWebSite\CustomerDiscount.Application.Contract\obj\Debug\net5.0\DiscountManagement.Application.Contract.GeneratedMSBuildEditorConfig.editorconfig
+E:\ArshinWebSite\CustomerDiscount.Application.Contract\obj\Debug\net5.0\DiscountManagement.Application.Contract.AssemblyInfoInputs.cache
+E:\ArshinWebSite\CustomerDiscount.Application.Contract\obj\Debug\net5.0\DiscountManagement.Application.Contract.AssemblyInfo.cs
+E:\ArshinWebSite\CustomerDiscount.Application.Contract\obj\Debug\net5.0\DiscountManagement.Application.Contract.csproj.CoreCompileInputs.cache
+E:\ArshinWebSite\CustomerDiscount.Application.Contract\obj\Debug\net5.0\DiscountManagement.Application.Contract.csproj.CopyComplete
+E:\ArshinWebSite\CustomerDiscount.Application.Contract\obj\Debug\net5.0\DiscountManagement.Application.Contract.dll
+E:\ArshinWebSite\CustomerDiscount.Application.Contract\obj\Debug\net5.0\ref\DiscountManagement.Application.Contract.dll
+E:\ArshinWebSite\CustomerDiscount.Application.Contract\obj\Debug\net5.0\DiscountManagement.Application.Contract.pdb
+E:\ArshinWebSite\CustomerDiscount.Application.Contract\bin\Debug\net5.0\ShopManagement.Application.Contracts.dll
+E:\ArshinWebSite\CustomerDiscount.Application.Contract\bin\Debug\net5.0\ShopManagement.Application.Contracts.pdb

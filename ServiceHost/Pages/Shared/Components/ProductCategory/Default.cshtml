@@ -1,0 +1,149 @@
+﻿@model List<_01_ArshinQuery.Contracts.ProductCategory.ProductCategoryQueryModel>
+
+<div class="header-nav d-none d-lg-flex">
+    <div class="main-categori-wrap d-none d-lg-block">
+        <a class="categories-button-active" href="javascript:void(0)">
+            <span class="fi-rs-apps"></span> <span class="et">مشاهده دسته بندی ها</span>
+            <i class="fi-rs-angle-down"></i>
+        </a>
+        <div class="categories-dropdown-wrap categories-dropdown-active-large font-heading">
+            <div class="d-flex categori-dropdown-inner">
+                <!-- ستون اول (6 آیتم اول) -->
+                <ul>
+                    @for (int i = 0; i < Math.Min(3, Model.Count); i++)
+                    {
+                        <li>
+                            <a href="@Model[i].Slug">
+                                <img src="@Model[i].Picture" alt="@Model[i].PictureAlt" title="@Model[i].PictureTitle"  style="width: 40px; height: 40px; border-radius: 50%; object-fit: cover;">@Model[i].Name
+                            </a>
+                        </li>
+                    }
+                </ul>
+
+                <!-- ستون دوم (3 آیتم بعدی) -->
+                <ul class="end">
+                    @for (int i = 3; i < Math.Min(6, Model.Count); i++)
+                    {
+                        <li>
+                            <a href="@Model[i].Slug">
+                                <img src="@Model[i].Picture" alt="@Model[i].PictureAlt" title="@Model[i].PictureTitle"  style="width: 40px; height: 40px; border-radius: 50%; object-fit: cover;" >@Model[i].Name
+                            </a>
+                        </li>
+                    }
+                </ul>
+            </div>
+
+            <!-- بخش مخفی برای آیتم های بیشتر -->
+            @if (Model.Count > 6)
+            {
+                <div class="more_slide_open" style="display: none">
+                    <div class="d-flex categori-dropdown-inner">
+                        <!-- ستون اول آیتم های اضافی -->
+                        <ul>
+                            @for (int i = 6; i < Math.Min(9, Model.Count); i++)
+                            {
+                                <li>
+                                    <a href="@Model[i].Slug">
+                                        <img src="@Model[i].Picture" alt="@Model[i].PictureAlt" title="@Model[i].PictureTitle"  style="width: 40px; height: 40px; border-radius: 50%; object-fit: cover;">@Model[i].Name
+                                    </a>
+                                </li>
+                            }
+                        </ul>
+
+                        <!-- ستون دوم آیتم های اضافی -->
+                        <ul class="end">
+                            @for (int i = 9; i < Math.Min(12, Model.Count); i++)
+                            {
+                                <li>
+                                    <a href="@Model[i].Slug">
+                                        <img src="@Model[i].Picture" alt="@Model[i].PictureAlt" title="@Model[i].PictureTitle"  style="width: 40px; height: 40px; border-radius: 50%; object-fit: cover;">@Model[i].Name
+                                    </a>
+                                </li>
+                            }
+                        </ul>
+                    </div>
+                </div>
+
+                <a href="javascript:void(0)" class="more_categories" id="moreCategoriesBtn">
+                    <span class="icon"></span>
+                    <span class="heading-sm-1">مشاهده بیشتر ...</span>
+                </a>
+            }
+        </div>
+    </div>
+
+    <div class="main-menu main-menu-padding-1 main-menu-lh-2 d-none d-lg-block font-heading">
+        <nav>
+            <ul>
+                <li class="hot-deals">
+                    <img src="Theme/assets/imgs/theme/icons/icon-hot.svg" alt="hot deals">
+                    <a href="shop-grid-right.html">تخفیف ها</a>
+                </li>
+                <li>
+                    <a class="active" href="./shop-grid-right.html">صفحه اصلی </a>
+                </li>
+                <li>
+                    <a href="page-about-2.html">پارچه های Outlet </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        // تابع toggle
+        function toggleMoreCategories(event) {
+            if (event) {
+                event.preventDefault();
+                event.stopImmediatePropagation();
+            }
+
+            const moreCategoriesBtn = document.getElementById('moreCategoriesBtn');
+            if (!moreCategoriesBtn) return;
+
+            const moreSlideOpen = moreCategoriesBtn.previousElementSibling;
+            const textElement = moreCategoriesBtn.querySelector('.heading-sm-1');
+
+            if (moreSlideOpen.style.display === 'none' || !moreSlideOpen.style.display) {
+                moreSlideOpen.style.display = 'block';
+                textElement.textContent = 'بستن';
+                moreCategoriesBtn.classList.add('active');
+            } else {
+                moreSlideOpen.style.display = 'none';
+                textElement.textContent = 'مشاهده بیشتر ...';
+                moreCategoriesBtn.classList.remove('active');
+            }
+        }
+
+        // اضافه کردن event listener
+        const moreCategoriesBtn = document.getElementById('moreCategoriesBtn');
+        if (moreCategoriesBtn) {
+            moreCategoriesBtn.addEventListener('click', toggleMoreCategories);
+        }
+
+        // بستن وقتی خارج کلیک می‌شود
+        document.addEventListener('click', function (e) {
+            const moreCategoriesBtn = document.getElementById('moreCategoriesBtn');
+            const moreSlideOpen = document.querySelector('.more_slide_open');
+
+            if (moreSlideOpen && moreSlideOpen.style.display === 'block') {
+                if (!e.target.closest('.categories-dropdown-wrap')) {
+                    moreSlideOpen.style.display = 'none';
+                    if (moreCategoriesBtn) {
+                        moreCategoriesBtn.querySelector('.heading-sm-1').textContent = 'مشاهده بیشتر ...';
+                        moreCategoriesBtn.classList.remove('active');
+                    }
+                }
+            }
+        });
+
+        // جلوگیری از بستن وقتی داخل dropdown کلیک می‌شود
+        const dropdownWrap = document.querySelector('.categories-dropdown-wrap');
+        if (dropdownWrap) {
+            dropdownWrap.addEventListener('click', function (e) {
+                e.stopImmediatePropagation();
+            });
+        }
+    });
+</script>

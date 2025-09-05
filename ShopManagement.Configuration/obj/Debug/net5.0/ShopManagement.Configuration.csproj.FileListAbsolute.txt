@@ -21,3 +21,5 @@ E:\ArshinWebSite\ShopManagement.Configuration\obj\Debug\net5.0\ShopManagement.Co
 E:\ArshinWebSite\ShopManagement.Configuration\obj\Debug\net5.0\ShopManagement.Configuration.dll
 E:\ArshinWebSite\ShopManagement.Configuration\obj\Debug\net5.0\ref\ShopManagement.Configuration.dll
 E:\ArshinWebSite\ShopManagement.Configuration\obj\Debug\net5.0\ShopManagement.Configuration.pdb
+E:\ArshinWebSite\ShopManagement.Configuration\bin\Debug\net5.0\01_ArshinQuery.dll
+E:\ArshinWebSite\ShopManagement.Configuration\bin\Debug\net5.0\01_ArshinQuery.pdb
