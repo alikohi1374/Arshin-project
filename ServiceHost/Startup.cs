@@ -1,4 +1,5 @@
 using DiscountManagement.Configuration;
+using InventoryManagement.Infrastructure.Configuration;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
@@ -23,6 +24,7 @@ namespace ServiceHost
             var ConnectionString = Configuration.GetConnectionString("ArshinDB");
             ShopManagementBootstrapper.Configure(services,ConnectionString);
             DiscountManagementBootstrapper.Configure(services, ConnectionString);
+            InventoryManagementBootstrapper.Configure(services, ConnectionString);
             services.AddRazorPages();
         }
 

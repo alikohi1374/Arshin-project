@@ -216,3 +216,13 @@ E:\ArshinWebSite\ServiceHost\obj\Debug\net5.0\Razor\Areas\Admin\Pages\Discount\C
 E:\ArshinWebSite\ServiceHost\obj\Debug\net5.0\Razor\Areas\Admin\Pages\Discount\ColleagueDiscounts\Create.cshtml.g.cs
 E:\ArshinWebSite\ServiceHost\obj\Debug\net5.0\Razor\Areas\Admin\Pages\Discount\ColleagueDiscounts\Edit.cshtml.g.cs
 E:\ArshinWebSite\ServiceHost\obj\Debug\net5.0\Razor\Areas\Admin\Pages\Discount\ColleagueDiscounts\Index.cshtml.g.cs
+E:\ArshinWebSite\ServiceHost\bin\Debug\net5.0\InventoryManagement.Application.Contract.dll
+E:\ArshinWebSite\ServiceHost\bin\Debug\net5.0\InventoryManagement.Domain.dll
+E:\ArshinWebSite\ServiceHost\bin\Debug\net5.0\InventoryManagement.Infrastructure.Configuration.dll
+E:\ArshinWebSite\ServiceHost\bin\Debug\net5.0\InventoryManagement.Infrastructure.EFCore.dll
+E:\ArshinWebSite\ServiceHost\bin\Debug\net5.0\InventoryManagement.Infrastructure.Configuration.pdb
+E:\ArshinWebSite\ServiceHost\bin\Debug\net5.0\InventoryManagement.Application.Contract.pdb
+E:\ArshinWebSite\ServiceHost\bin\Debug\net5.0\InventoryManagement.Domain.pdb
+E:\ArshinWebSite\ServiceHost\bin\Debug\net5.0\InventoryManagement.Infrastructure.EFCore.pdb
+E:\ArshinWebSite\ServiceHost\bin\Debug\net5.0\InventoryManagement.Application.dll
+E:\ArshinWebSite\ServiceHost\bin\Debug\net5.0\InventoryManagement.Application.pdb
