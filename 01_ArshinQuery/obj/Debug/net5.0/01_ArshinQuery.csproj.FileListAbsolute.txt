@@ -19,3 +19,7 @@ E:\ArshinWebSite\01_ArshinQuery\obj\Debug\net5.0\01_ArshinQuery.csproj.CopyCompl
 E:\ArshinWebSite\01_ArshinQuery\obj\Debug\net5.0\01_ArshinQuery.dll
 E:\ArshinWebSite\01_ArshinQuery\obj\Debug\net5.0\ref\01_ArshinQuery.dll
 E:\ArshinWebSite\01_ArshinQuery\obj\Debug\net5.0\01_ArshinQuery.pdb
+E:\ArshinWebSite\01_ArshinQuery\bin\Debug\net5.0\InventoryManagement.Application.Contract.dll
+E:\ArshinWebSite\01_ArshinQuery\bin\Debug\net5.0\InventoryManagement.Domain.dll
+E:\ArshinWebSite\01_ArshinQuery\bin\Debug\net5.0\InventoryManagement.Application.Contract.pdb
+E:\ArshinWebSite\01_ArshinQuery\bin\Debug\net5.0\InventoryManagement.Domain.pdb

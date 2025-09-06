@@ -8,6 +8,7 @@
     ".NETCoreApp,Version=v5.0": {
       "ShopManagement.Infrastructure.EFCore/1.0.0": {
         "dependencies": {
+          "InventoryManagement.Domain": "1.0.0",
           "Microsoft.EntityFrameworkCore": "5.0.17",
           "Microsoft.EntityFrameworkCore.SqlServer": "5.0.17",
           "Microsoft.EntityFrameworkCore.Tools": "5.0.17",
@@ -1620,6 +1621,24 @@
           "0_Framework.dll": {}
         }
       },
+      "InventoryManagement.Application.Contract/1.0.0": {
+        "dependencies": {
+          "0_Framework": "1.0.0",
+          "ShopManagement.Application.Contracts": "1.0.0"
+        },
+        "runtime": {
+          "InventoryManagement.Application.Contract.dll": {}
+        }
+      },
+      "InventoryManagement.Domain/1.0.0": {
+        "dependencies": {
+          "0_Framework": "1.0.0",
+          "InventoryManagement.Application.Contract": "1.0.0"
+        },
+        "runtime": {
+          "InventoryManagement.Domain.dll": {}
+        }
+      },
       "ShopManagement.Application.Contracts/1.0.0": {
         "dependencies": {
           "0_Framework": "1.0.0",
@@ -2641,6 +2660,16 @@
       "hashPath": "system.xml.xmlserializer.4.3.0.nupkg.sha512"
     },
     "0_Framework/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "InventoryManagement.Application.Contract/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "InventoryManagement.Domain/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

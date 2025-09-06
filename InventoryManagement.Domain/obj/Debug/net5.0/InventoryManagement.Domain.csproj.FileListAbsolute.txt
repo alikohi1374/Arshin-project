@@ -15,3 +15,5 @@ E:\ArshinWebSite\InventoryManagement.Domain\obj\Debug\net5.0\InventoryManagement
 E:\ArshinWebSite\InventoryManagement.Domain\obj\Debug\net5.0\InventoryManagement.Domain.dll
 E:\ArshinWebSite\InventoryManagement.Domain\obj\Debug\net5.0\ref\InventoryManagement.Domain.dll
 E:\ArshinWebSite\InventoryManagement.Domain\obj\Debug\net5.0\InventoryManagement.Domain.pdb
+E:\ArshinWebSite\InventoryManagement.Domain\bin\Debug\net5.0\ShopManagement.Application.Contracts.dll
+E:\ArshinWebSite\InventoryManagement.Domain\bin\Debug\net5.0\ShopManagement.Application.Contracts.pdb

@@ -20,3 +20,7 @@ E:\ArshinWebSite\ShopManagement.Infrastructure.EFCore\obj\Debug\net5.0\ShopManag
 E:\ArshinWebSite\ShopManagement.Infrastructure.EFCore\obj\Debug\net5.0\ref\ShopManagement.Infrastructure.EFCore.dll
 E:\ArshinWebSite\ShopManagement.Infrastructure.EFCore\obj\Debug\net5.0\ShopManagement.Infrastructure.EFCore.pdb
 E:\ArshinWebSite\ShopManagement.Infrastructure.EFCore\obj\Debug\net5.0\ShopManagement.Infrastructure.EFCore.genruntimeconfig.cache
+E:\ArshinWebSite\ShopManagement.Infrastructure.EFCore\bin\Debug\net5.0\InventoryManagement.Application.Contract.dll
+E:\ArshinWebSite\ShopManagement.Infrastructure.EFCore\bin\Debug\net5.0\InventoryManagement.Domain.dll
+E:\ArshinWebSite\ShopManagement.Infrastructure.EFCore\bin\Debug\net5.0\InventoryManagement.Domain.pdb
+E:\ArshinWebSite\ShopManagement.Infrastructure.EFCore\bin\Debug\net5.0\InventoryManagement.Application.Contract.pdb

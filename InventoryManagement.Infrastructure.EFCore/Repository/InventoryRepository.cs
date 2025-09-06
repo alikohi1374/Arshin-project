@@ -1,9 +1,9 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
+using _0_Framework.Application;
 using _0_Framework.Infrastructure;
 using InventoryManagement.Application.Contract.Inventory;
 using InventoryManagement.Domain.InventoryAgg;
-using Microsoft.EntityFrameworkCore;
 using ShopManagement.Infrastructure.EFCore;
 
 namespace InventoryManagement.Infrastructure.EFCore.Repository
@@ -28,7 +28,7 @@ namespace InventoryManagement.Infrastructure.EFCore.Repository
             }).FirstOrDefault(x => x.Id == id);
         }
 
-        public Domain.InventoryAgg.Inventory GetBy(long productId)
+        public Inventory GetBy(long productId)
         {
             return _inventory.Inventory.FirstOrDefault(x => x.ProductId == productId);
         }
@@ -43,12 +43,13 @@ namespace InventoryManagement.Infrastructure.EFCore.Repository
                 UnitPrice = x.UnitPrice,
                 InStock = x.InStock,
                 ProductId = x.ProductId,
-                CurrentCount = x.CalculateCurrentCount()
+                CurrentCount = x.CalculateCurrentCount(),
+                CreationDate = x.CreationDate.ToFarsi()
             });
             if (searchModel.ProductId > 0)
                 query = query.Where(x => x.ProductId == searchModel.ProductId);
 
-            if (!searchModel.InStock)
+            if (searchModel.InStock)
                 query = query.Where(x =>!x.InStock);
 
             var inventory = query.OrderByDescending(x => x.Id).ToList();
@@ -60,5 +61,22 @@ namespace InventoryManagement.Infrastructure.EFCore.Repository
             return inventory;
 
         }
-    }
+
+        public List<InventoryOperationViewModel> GetOperationLog(long inventoryId)
+        {
+            var inventory = _inventory.Inventory.FirstOrDefault(x => x.Id == inventoryId);
+            return inventory.Operations.Select(x => new InventoryOperationViewModel
+            {
+                Id = x.Id,
+                CurrentCount = x.CurrentCount,
+                Count = x.Count,
+                Description = x.Description,
+                Operation = x.Operation,
+                OrderId = x.OrderId,
+                Operator = "مدیر",
+                OperationDate = x.OperationDate.ToFarsi(),
+                OperatorId = x.OperationId
+            }).OrderByDescending(x=>x.Id).ToList();
+        }
+  }
 }

@@ -27,3 +27,7 @@ E:\ArshinWebSite\DiscountManagement.Configuration\obj\Debug\net5.0\DiscountManag
 E:\ArshinWebSite\DiscountManagement.Configuration\obj\Debug\net5.0\DiscountManagement.Configuration.dll
 E:\ArshinWebSite\DiscountManagement.Configuration\obj\Debug\net5.0\ref\DiscountManagement.Configuration.dll
 E:\ArshinWebSite\DiscountManagement.Configuration\obj\Debug\net5.0\DiscountManagement.Configuration.pdb
+E:\ArshinWebSite\DiscountManagement.Configuration\bin\Debug\net5.0\InventoryManagement.Application.Contract.dll
+E:\ArshinWebSite\DiscountManagement.Configuration\bin\Debug\net5.0\InventoryManagement.Domain.dll
+E:\ArshinWebSite\DiscountManagement.Configuration\bin\Debug\net5.0\InventoryManagement.Application.Contract.pdb
+E:\ArshinWebSite\DiscountManagement.Configuration\bin\Debug\net5.0\InventoryManagement.Domain.pdb

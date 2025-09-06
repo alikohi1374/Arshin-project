@@ -23,7 +23,7 @@ namespace ShopManagement.Application
 
            var Slug =command.Slug.Slugify();
 
-           var product = new Product(command.Description,command.Name, command.Code, command.UnitPrice, command.ShortDescription,
+           var product = new Product(command.Description,command.Name, command.Code, command.ShortDescription,
                command.Picture,
                command.PictureAlt, command.PictureTitle,
                command.Keywords, command.MetaDescription, Slug,
@@ -33,30 +33,7 @@ namespace ShopManagement.Application
                 return operation.Succeeded();
        }
 
-        public OperationResult InStock(long id)
-        {
-            var operation = new OperationResult();
-            var product = _productRepository.Get(id);
-            if (product == null)
-                operation.Failed(ApplicationMessages.RecordNotFound);
-            
-            product.InStock();
-            _productRepository.Save();
-            return operation.Succeeded();
-        }
-
-        public OperationResult NotStock(long id)
-        {
-            var operation = new OperationResult();
-            var product = _productRepository.Get(id);
-            if (product == null)
-                operation.Failed(ApplicationMessages.RecordNotFound);
-
-            product.NotStock();
-            _productRepository.Save();
-            return operation.Succeeded();
-        }
-
+      
         public OperationResult Edit(EditProduct command)
         {
             var operation = new OperationResult();
@@ -66,7 +43,7 @@ namespace ShopManagement.Application
             if (_productRepository.Exist(x => x.Name == command.Name && x.Id != command.Id))
                 return operation.Failed(ApplicationMessages.DuplicatedRecord);
             var Slug = command.Slug.Slugify();
-            product.Edit(command.Description,command.Name, command.Code, command.UnitPrice, command.ShortDescription,
+            product.Edit(command.Description,command.Name, command.Code, command.ShortDescription,
                 command.Picture,
                 command.PictureAlt, command.PictureTitle, command.Keywords, command.MetaDescription, command.Slug,
                 command.CategoryId);

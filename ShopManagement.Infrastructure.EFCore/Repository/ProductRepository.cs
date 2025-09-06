@@ -3,6 +3,7 @@ using System.Globalization;
 using System.Linq;
 using _0_Framework.Application;
 using _0_Framework.Infrastructure;
+
 using Microsoft.EntityFrameworkCore;
 using ShopManagement.Application.Contracts.Product;
 using ShopManagement.Domain.ProductAgg;
@@ -43,7 +44,6 @@ namespace ShopManagement.Infrastructure.EFCore.Repository
                 MetaDescription = x.MetaDescription,
                 Picture = x.Picture,
                 PictureTitle = x.PictureTitle,
-                UnitPrice = x.UnitPrice,
                 Description = x.Description,
 
             }).FirstOrDefault(s => s.Id == id);
@@ -61,9 +61,7 @@ namespace ShopManagement.Infrastructure.EFCore.Repository
                     Code = x.Code,
                     Picture = x.Picture,
                     Name = x.Name,
-                    UnitPrice = x.UnitPrice,
                     CategoryId = x.CategoryId,
-                    IsInStock = x.IsInStock,
                     CreationDate = x.CreationDate.ToFarsi()
 
                 });

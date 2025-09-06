@@ -23,3 +23,7 @@ E:\ArshinWebSite\ShopManagement.Configuration\obj\Debug\net5.0\ref\ShopManagemen
 E:\ArshinWebSite\ShopManagement.Configuration\obj\Debug\net5.0\ShopManagement.Configuration.pdb
 E:\ArshinWebSite\ShopManagement.Configuration\bin\Debug\net5.0\01_ArshinQuery.dll
 E:\ArshinWebSite\ShopManagement.Configuration\bin\Debug\net5.0\01_ArshinQuery.pdb
+E:\ArshinWebSite\ShopManagement.Configuration\bin\Debug\net5.0\InventoryManagement.Application.Contract.dll
+E:\ArshinWebSite\ShopManagement.Configuration\bin\Debug\net5.0\InventoryManagement.Domain.dll
+E:\ArshinWebSite\ShopManagement.Configuration\bin\Debug\net5.0\InventoryManagement.Application.Contract.pdb
+E:\ArshinWebSite\ShopManagement.Configuration\bin\Debug\net5.0\InventoryManagement.Domain.pdb

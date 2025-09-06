@@ -1623,7 +1623,8 @@
       },
       "InventoryManagement.Application.Contract/1.0.0": {
         "dependencies": {
-          "0_Framework": "1.0.0"
+          "0_Framework": "1.0.0",
+          "ShopManagement.Application.Contracts": "1.0.0"
         },
         "runtime": {
           "InventoryManagement.Application.Contract.dll": {}
@@ -1658,6 +1659,7 @@
       },
       "ShopManagement.Infrastructure.EFCore/1.0.0": {
         "dependencies": {
+          "InventoryManagement.Domain": "1.0.0",
           "Microsoft.EntityFrameworkCore": "5.0.17",
           "Microsoft.EntityFrameworkCore.SqlServer": "5.0.17",
           "ShopManagement.Domain": "1.0.0"

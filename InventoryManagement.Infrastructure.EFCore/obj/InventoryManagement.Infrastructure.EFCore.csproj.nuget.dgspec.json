@@ -98,6 +98,9 @@
             "projectReferences": {
               "E:\\ArshinWebSite\\0_Framework\\0_Framework.csproj": {
                 "projectPath": "E:\\ArshinWebSite\\0_Framework\\0_Framework.csproj"
+              },
+              "E:\\ArshinWebSite\\ShopManagement.Application.Contracts\\ShopManagement.Application.Contracts.csproj": {
+                "projectPath": "E:\\ArshinWebSite\\ShopManagement.Application.Contracts\\ShopManagement.Application.Contracts.csproj"
               }
             }
           }
@@ -437,6 +440,9 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
+              "E:\\ArshinWebSite\\InventoryManagement.Domain\\InventoryManagement.Domain.csproj": {
+                "projectPath": "E:\\ArshinWebSite\\InventoryManagement.Domain\\InventoryManagement.Domain.csproj"
+              },
               "E:\\ArshinWebSite\\ShopManagement.Domain\\ShopManagement.Domain.csproj": {
                 "projectPath": "E:\\ArshinWebSite\\ShopManagement.Domain\\ShopManagement.Domain.csproj"
               }

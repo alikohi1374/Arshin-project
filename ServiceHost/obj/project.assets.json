@@ -2801,7 +2801,8 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
         "dependencies": {
-          "0_Framework": "1.0.0"
+          "0_Framework": "1.0.0",
+          "ShopManagement.Application.Contracts": "1.0.0"
         },
         "compile": {
           "bin/placeholder/InventoryManagement.Application.Contract.dll": {}
@@ -2920,6 +2921,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
         "dependencies": {
+          "InventoryManagement.Domain": "1.0.0",
           "Microsoft.EntityFrameworkCore": "5.0.17",
           "Microsoft.EntityFrameworkCore.SqlServer": "5.0.17",
           "ShopManagement.Domain": "1.0.0"
