@@ -1,4 +1,5 @@
-﻿using Microsoft.Extensions.DependencyInjection;
+﻿using _01_ArshinQuery.Contracts.Product;
+using Microsoft.Extensions.DependencyInjection;
 using ShopManagement.Application;
 using ShopManagement.Application.Contracts.ProductCategory;
 using Microsoft.EntityFrameworkCore;
@@ -32,6 +33,7 @@ namespace ShopManagement.Configuration
 
 
             services.AddTransient<IProductCategoryQuery, ProductCategoryQuery>();
+            services.AddTransient<IProductQuery, ProductQuery>();
 
             services.AddDbContext<ShopContext>(x => x.UseSqlServer(ConnectionString));
         }

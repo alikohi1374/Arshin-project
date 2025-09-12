@@ -19,8 +19,7 @@
 </head>
 
 <body>
-    <!-- Quick view -->
-    <div class="modal fade custom-modal" id="quickViewModal" tabindex="-1" aria-labelledby="quickViewModalLabel" aria-hidden="true">
+<div class="modal fade custom-modal" id="quickViewModal" tabindex="-1" aria-labelledby="quickViewModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -29,7 +28,7 @@
                         <div class="col-md-6 col-sm-12 col-xs-12 mb-md-0 mb-sm-5">
                             <div class="detail-gallery">
                                 <span class="zoom-icon"><i class="fi-rs-search"></i></span>
-                                <!-- MAIN SLIDES -->
+                            
                                 <div class="product-image-slider">
                                     <figure class="border-radius-10">
                                         <img src="Theme/assets/imgs/shop/product-16-2.jpg" alt="product image">
@@ -53,7 +52,7 @@
                                         <img src="Theme/assets/imgs/shop/product-16-7.jpg" alt="product image">
                                     </figure>
                                 </div>
-                                <!-- THUMBNAILS -->
+                             
                                 <div class="slider-nav-thumbnails">
                                     <div><img src="Theme/assets/imgs/shop/thumbnail-3.jpg" alt="product image"></div>
                                     <div><img src="Theme/assets/imgs/shop/thumbnail-4.jpg" alt="product image"></div>
@@ -64,7 +63,7 @@
                                     <div><img src="Theme/assets/imgs/shop/thumbnail-9.jpg" alt="product image"></div>
                                 </div>
                             </div>
-                            <!-- End Gallery -->
+                          
                         </div>
                         <div class="col-md-6 col-sm-12 col-xs-12">
                             <div class="detail-info pr-30 pl-30">
@@ -112,7 +111,6 @@
         </div>
     </div>
     <header class="header-area header-style-1 header-height-2">
-      
         <div class="header-middle header-middle-ptb-1 d-none d-lg-block">
             <div class="container">
                 <div class="header-wrap">
@@ -121,21 +119,8 @@
                     </div>
                     <div class="header-right">
                         <div class="search-style-2">
-                            <form action="#">
-                                <select class="select-active">
-                                    <option>دسته بندی ها</option>
-                                    <option>شیر و لبنیات</option>
-                                    <option>الکل</option>
-                                    <option>پوشاک و زیبایی</option>
-                                    <option>غذا و اسباب بازی حیوانات</option>
-                                    <option>فست فود</option>
-                                    <option>مواد پخت</option>
-                                    <option>سبزیجات</option>
-                                    <option>غذاهای دریایی تازه</option>
-                                    <option>رشته و برنج</option>
-                                    <option>بستنی</option>
-                                </select>
-                                <input type="text" placeholder="جستجو برای ...">
+                            <form method="get" asp-page="/Search">
+                                <input type="text" name="Value" id="Value" placeholder="جستجو کنید ...">
                             </form>
                         </div>
                         <div class="header-action-right">
@@ -278,9 +263,6 @@
                 
             </div>
         </div>
-      
-       
-       
     </header>
     <div class="mobile-header-active mobile-header-wrapper-style">
         <div class="mobile-header-wrapper-inner">
@@ -340,194 +322,11 @@
             </div>
         </div>
     </div>
-    <!--End header-->
+
     <main class="main">
-        <div class="page-header mt-30 mb-50">
-
-        </div>
-        <div class="container mb-30">
-            <div class="row flex-row-reverse">
-                <div class="col-lg-4-5">
-                    <div class="shop-product-fillter">
-                        <div class="totall-product">
-                            <p>در سبدخرید شما <strong class="text-brand">29</strong> محصول یافت شد</p>
-                        </div>
-                        <div class="sort-by-product-area">
-                            <div class="sort-by-cover mr-10">
-                                <div class="sort-by-product-wrap">
-                                    <div class="sort-by">
-                                        <span>نمایش:<i class="fi-rs-apps"></i></span>
-                                    </div>
-                                    <div class="sort-by-dropdown-wrap">
-                                        <span> 50 <i class="fi-rs-angle-small-down"></i></span>
-                                    </div>
-                                </div>
-                                <div class="sort-by-dropdown">
-                                    <ul>
-                                        <li><a class="active" href="#">50</a></li>
-                                        <li><a href="#">100</a></li>
-                                        <li><a href="#">150</a></li>
-                                        <li><a href="#">200</a></li>
-                                        <li><a href="#">همه</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="sort-by-cover">
-                                <div class="sort-by-product-wrap">
-                                    <div class="sort-by">
-                                        <span>مرتب سازی:<i class="fi-rs-apps-sort"></i></span>
-                                    </div>
-                                    <div class="sort-by-dropdown-wrap">
-                                        <span> <i class="fi-rs-angle-small-down"></i> ویژه</span>
-                                    </div>
-                                </div>
-                                <div class="sort-by-dropdown">
-                                    <ul>
-                                        <li><a class="active" href="#">ویژه ها</a></li>
-                                        <li><a href="#">قیمت: کم به زیاد</a></li>
-                                        <li><a href="#">قیمت: زیاد به کم</a></li>
-                                        <li><a href="#">تاریخ به روزرسانی</a></li>
-                                        <li><a href="#">رتبه بندی</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    @RenderBody()
-                    <!--product grid-->
-                    <div class="pagination-area mt-20 mb-20">
-                        <nav aria-label="Page navigation example">
-                            <ul class="pagination justify-content-start">
-                                <li class="page-item">
-                                    <a class="page-link" href="#"><i class="fi-rs-arrow-small-right"></i></a>
-                                </li>
-                                <li class="page-item"><a class="page-link" href="#">1</a></li>
-                                <li class="page-item active"><a class="page-link" href="#">2</a></li>
-                                <li class="page-item"><a class="page-link" href="#">3</a></li>
-                                <li class="page-item"><a class="page-link dot" href="#">...</a></li>
-                                <li class="page-item"><a class="page-link" href="#">6</a></li>
-                                <li class="page-item">
-                                    <a class="page-link" href="#"><i class="fi-rs-arrow-small-left"></i></a>
-                                </li>
-                            </ul>
-                        </nav>
-                    </div>
-
-                    <!--End Deals-->
-                </div>
-                <div class="col-lg-1-5 primary-sidebar sticky-sidebar">
-                    <div class="sidebar-widget widget-category-2 mb-30">
-                        <h5 class="section-title style-1 mb-30">دسته بندی</h5>
-                        <ul>
-                            <li>
-                                <a href="shop-grid-right.html"> <img src="Theme/assets/imgs/theme/icons/category-1.svg" alt="">شیر و لبنیات</a><span class=" count">30</span>
-                            </li>
-                            <li>
-                                <a href="shop-grid-right.html"> <img src="Theme/assets/imgs/theme/icons/category-2.svg" alt="">لباس</a><span class="count">35</span>
-                            </li>
-                            <li>
-                                <a href="shop-grid-right.html"> <img src="Theme/assets/imgs/theme/icons/category-3.svg" alt="">غذاهای حیوانات خانگی </a><span class="count ">42</span>
-                            </li>
-                            <li>
-                                <a href="shop-grid-right.html"> <img src="Theme/assets/imgs/theme/icons/category-4.svg" alt="">مواد پخت</a><span class="count ">68</span>
-                            </li>
-                            <li>
-                                <a href="shop-grid-right.html"> <img src="Theme/assets/imgs/theme/icons/category-5.svg" alt="">میوه تازه</a><span class="count ">87</span>
-                            </li>
-                        </ul>
-                    </div>
-                    <!-- Fillter By Price -->
-                    <div class="sidebar-widget price_range range mb-30">
-                        <h5 class="section-title style-1 mb-30">فیلتر با قیمت</h5>
-                        <div class="price-filter">
-                            <div class="price-filter-inner">
-                                <div id="slider-range" class="mb-20"></div>
-                                <div class="d-flex justify-content-between">
-                                    <div class="caption">از: <strong id="slider-range-value1" class="text-brand"></strong></div>
-                                    <div class="caption">تا: <strong id="slider-range-value2" class="text-brand"></strong></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="list-group">
-                            <div class="list-group-item mb-10 mt-10">
-                                <label class="fw-900">رنگ</label>
-                                <div class="custome-checkbox">
-                                    <input class="form-check-input" type="checkbox" name="checkbox" id="exampleCheckbox1" value="">
-                                    <label class="form-check-label" for="exampleCheckbox1"><span>قرمز (56)</span></label>
-                                    <br>
-                                    <input class="form-check-input" type="checkbox" name="checkbox" id="exampleCheckbox2" value="">
-                                    <label class="form-check-label" for="exampleCheckbox2"><span>سبز (78)</span></label>
-                                    <br>
-                                    <input class="form-check-input" type="checkbox" name="checkbox" id="exampleCheckbox3" value="">
-                                    <label class="form-check-label" for="exampleCheckbox3"><span>آبی (54)</span></label>
-                                </div>
-                                <label class="fw-900 mt-15">آیتم ها</label>
-                                <div class="custome-checkbox">
-                                    <input class="form-check-input" type="checkbox" name="checkbox" id="exampleCheckbox11" value="">
-                                    <label class="form-check-label" for="exampleCheckbox11"><span>جدید (1506)</span></label>
-                                    <br>
-                                    <input class="form-check-input" type="checkbox" name="checkbox" id="exampleCheckbox21" value="">
-                                    <label class="form-check-label" for="exampleCheckbox21"><span>تعمیر شده (27)</span></label>
-                                    <br>
-                                    <input class="form-check-input" type="checkbox" name="checkbox" id="exampleCheckbox31" value="">
-                                    <label class="form-check-label" for="exampleCheckbox31"><span>استفاده شده (45)</span></label>
-                                </div>
-                            </div>
-                        </div>
-                        <a href="shop-grid-right.html" class="btn btn-sm btn-default"><i class="fi-rs-filter mr-5"></i> فیلتر</a>
-                    </div>
-                    <!-- Product sidebar Widget -->
-                    <div class="sidebar-widget product-sidebar mb-30 p-30 bg-grey border-radius-10">
-                        <h5 class="section-title style-1 mb-30">محصولات جدید</h5>
-                        <div class="single-post clearfix">
-                            <div class="image">
-                                <img src="Theme/assets/imgs/shop/thumbnail-3.jpg" alt="#">
-                            </div>
-                            <div class="content pt-10">
-                                <h5><a href="shop-product-detail.html">آب پرتقال</a></h5>
-                                <p class="price mb-0 mt-5">99.000 تومان</p>
-                                <div class="product-rate">
-                                    <div class="product-rating" style="width: 90%"></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="single-post clearfix">
-                            <div class="image">
-                                <img src="Theme/assets/imgs/shop/thumbnail-4.jpg" alt="#">
-                            </div>
-                            <div class="content pt-10">
-                                <h6><a href="shop-product-detail.html">موز</a></h6>
-                                <p class="price mb-0 mt-5">89.000 تومان</p>
-                                <div class="product-rate">
-                                    <div class="product-rating" style="width: 80%"></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="single-post clearfix">
-                            <div class="image">
-                                <img src="Theme/assets/imgs/shop/thumbnail-5.jpg" alt="#">
-                            </div>
-                            <div class="content pt-10">
-                                <h6><a href="shop-product-detail.html">هندوانه</a></h6>
-                                <p class="price mb-0 mt-5">25.000 تومان</p>
-                                <div class="product-rate">
-                                    <div class="product-rating" style="width: 60%"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="banner-img wow fadeIn mb-lg-0 animated d-lg-block d-none">
-                        <img src="Theme/assets/imgs/banner/123.jpg" alt="">
-                        <div class="banner-text">
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+        @RenderBody()
     </main>
     <footer class="main">
-
         <hr />
         <section class="section-padding footer-mid">
             <div class="container pt-15 pb-20">

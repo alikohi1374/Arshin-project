@@ -232,3 +232,10 @@ E:\ArshinWebSite\ServiceHost\obj\Debug\net5.0\Razor\Areas\Admin\Pages\Inventory\
 E:\ArshinWebSite\ServiceHost\obj\Debug\net5.0\Razor\Areas\Admin\Pages\Inventory\Increase.cshtml.g.cs
 E:\ArshinWebSite\ServiceHost\obj\Debug\net5.0\Razor\Areas\Admin\Pages\Inventory\Reduce.cshtml.g.cs
 E:\ArshinWebSite\ServiceHost\obj\Debug\net5.0\Razor\Areas\Admin\Pages\Inventory\OperationLog.cshtml.g.cs
+E:\ArshinWebSite\ServiceHost\obj\Debug\net5.0\Razor\Pages\Shared\Components\ProductCategoryWithProduct\Default.cshtml.g.cs
+E:\ArshinWebSite\ServiceHost\obj\Debug\net5.0\Razor\Pages\Shared\Components\SliderCategory\Default.cshtml.g.cs
+E:\ArshinWebSite\ServiceHost\obj\Debug\net5.0\Razor\Pages\Shared\Components\LastArrivals\Default.cshtml.g.cs
+E:\ArshinWebSite\ServiceHost\obj\Debug\net5.0\Razor\Pages\ProductCategory.cshtml.g.cs
+E:\ArshinWebSite\ServiceHost\obj\Debug\net5.0\Razor\Pages\Shared\Discounts.cshtml.g.cs
+E:\ArshinWebSite\ServiceHost\obj\Debug\net5.0\Razor\Pages\Search.cshtml.g.cs
+E:\ArshinWebSite\ServiceHost\obj\Debug\net5.0\Razor\Pages\Product.cshtml.g.cs

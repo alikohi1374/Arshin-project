@@ -42,7 +42,7 @@ namespace DiscountManagement.Application
                 return operation.Failed(ApplicationMessages.DuplicatedRecord);
             var startDate = command.StartDate.ToGeorgianDateTime();
             var endDate = command.EndDate.ToGeorgianDateTime();
-            customerDiscount.Edit(command.Id,command.DiscountRate,startDate,endDate,command.Reason);
+            customerDiscount.Edit(command.ProductId,command.DiscountRate,startDate,endDate,command.Reason);
             _customerDiscountRepository.Save();
             return operation.Succeeded();
 

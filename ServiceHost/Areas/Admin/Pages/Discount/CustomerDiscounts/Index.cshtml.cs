@@ -56,8 +56,9 @@ namespace ServiceHost.Areas.Admin.Pages.Discount.CustomerDiscounts
 
         public JsonResult OnPostEdit(EditCustomerDiscount command)
         {
-            var operationResult = _customerDiscountApplication.Edit(command);
-            return new JsonResult(operationResult);
+
+            var result = _customerDiscountApplication.Edit(command);
+            return new JsonResult(result);
         }
 
 

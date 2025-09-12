@@ -32,6 +32,12 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
+              "E:\\ArshinWebSite\\DiscountManagement.Infrastructure.EFCore\\DiscountManagement.Infrastructure.EFCore.csproj": {
+                "projectPath": "E:\\ArshinWebSite\\DiscountManagement.Infrastructure.EFCore\\DiscountManagement.Infrastructure.EFCore.csproj"
+              },
+              "E:\\ArshinWebSite\\InventoryManagement.Infrastructure.EFCore\\InventoryManagement.Infrastructure.EFCore.csproj": {
+                "projectPath": "E:\\ArshinWebSite\\InventoryManagement.Infrastructure.EFCore\\InventoryManagement.Infrastructure.EFCore.csproj"
+              },
               "E:\\ArshinWebSite\\ShopManagement.Infrastructure.EFCore\\ShopManagement.Infrastructure.EFCore.csproj": {
                 "projectPath": "E:\\ArshinWebSite\\ShopManagement.Infrastructure.EFCore\\ShopManagement.Infrastructure.EFCore.csproj"
               }

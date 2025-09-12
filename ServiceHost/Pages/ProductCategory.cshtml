@@ -1,0 +1,98 @@
+﻿@page
+@model ServiceHost.Pages.ProductCategoryModel
+@{
+}
+
+    <main class="main pages">
+    <div class="page-header breadcrumb-wrap">
+        <div class="container">
+            <div class="breadcrumb">
+                <a asp-page="./Index" rel="nofollow">صفحه اصلی<i class="fi-rs-home mr-5"></i></a>
+                <span>@Model.ProductCategory.Name</span>
+            </div>
+        </div>
+    </div>
+    <h3 style="text-align: center; padding: 20px;">محصولات  @Model.ProductCategory.Name </h3>
+    <hr>
+    <div class="row product-grid" style="margin: 50px 150px 150px 150px;">
+        
+        @if (Model.ProductCategory.Products.Count==0)
+        {
+            <h3 style="text-align: center; padding: 20px;">محصولی برای  @Model.ProductCategory.Name  ثبت نشده است</h3>
+        }
+        else
+        {
+            @foreach (var product in Model.ProductCategory.Products)
+            {
+                <div class="col-lg-1-5 col-md-4 col-12 col-sm-6">
+                    <div class="product-cart-wrap">
+                        <div class="product-img-action-wrap">
+                            <div class="product-img product-img-zoom">
+                                <a href="shop-product-right.html">
+                                    <img class="default-img" src="Theme/assets/imgs/shop/@product.Picture" alt="@product.Name">
+                                    <img class="hover-img" src="Theme/assets/imgs/shop/@product.Picture" alt="@product.Name">
+                                </a>
+                            </div>
+                            <div class="product-action-1">
+                                <a aria-label="مشاهده سریع" class="action-btn small hover-up" data-bs-toggle="modal" data-bs-target="#quickViewModal">
+                                    <i class="fi-rs-eye"></i>
+                                </a>
+                                <a aria-label="علاقه مندی" class="action-btn small hover-up" href="shop-wishlist.html">
+                                    <i class="fi-rs-heart"></i>
+                                </a>
+                                <a aria-label="مقایسه" class="action-btn small hover-up" href="shop-compare.html">
+                                    <i class="fi-rs-shuffle"></i>
+                                </a>
+                            </div>
+
+                            @if (product.HasDiscount)
+                            {
+                                <div class="product-badges product-badges-position product-badges-mrg">
+                                    <span class="hot">تخفیف @product.DiscountRate%</span>
+                                </div>
+                            }
+                        </div>
+
+                        <div class="product-content-wrap">
+
+                            <h2>
+                                <a href="shop-product-right.html">@product.Name</a>
+                            </h2>
+
+
+                            <div class="product-price mt-10">
+                                @if (product.HasDiscount)
+                                {
+                                    <span> @product.PriceWithDiscount </span>
+                                    <span class="old-price">@product.Price </span>
+                                }
+                                else
+                                {
+                                    <span>@product.Price تومان</span>
+                                }
+                            </div>
+
+                            <div class="sold mt-15 mb-15">
+                                <div class="progress mb-5">
+                                    @{
+                                        var soldPercent = 10 > 0
+                                            ? (int) ((double) 50 / 100 * 100)
+                                            : 0;
+                                    }
+                                    <div class="progress-bar" role="progressbar" style="width: @soldPercent%" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                                <span class="font-xs text-heading">فروش: 100/400</span>
+                            </div>
+
+                            <a href="shop-cart.html" class="btn w-100 hover-up">
+                                <i class="fi-rs-shopping-cart mr-5"></i>افزودن به سبدخرید
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            }
+        }
+    </div>
+</main>
+
+

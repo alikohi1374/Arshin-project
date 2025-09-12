@@ -23,3 +23,11 @@ E:\ArshinWebSite\01_ArshinQuery\bin\Debug\net5.0\InventoryManagement.Application
 E:\ArshinWebSite\01_ArshinQuery\bin\Debug\net5.0\InventoryManagement.Domain.dll
 E:\ArshinWebSite\01_ArshinQuery\bin\Debug\net5.0\InventoryManagement.Application.Contract.pdb
 E:\ArshinWebSite\01_ArshinQuery\bin\Debug\net5.0\InventoryManagement.Domain.pdb
+E:\ArshinWebSite\01_ArshinQuery\bin\Debug\net5.0\InventoryManagement.Infrastructure.EFCore.dll
+E:\ArshinWebSite\01_ArshinQuery\bin\Debug\net5.0\InventoryManagement.Infrastructure.EFCore.pdb
+E:\ArshinWebSite\01_ArshinQuery\bin\Debug\net5.0\DiscountManagement.Application.Contract.dll
+E:\ArshinWebSite\01_ArshinQuery\bin\Debug\net5.0\DiscountManagement.Domain.dll
+E:\ArshinWebSite\01_ArshinQuery\bin\Debug\net5.0\DiscountManagement.Infrastructure.EFCore.dll
+E:\ArshinWebSite\01_ArshinQuery\bin\Debug\net5.0\DiscountManagement.Infrastructure.EFCore.pdb
+E:\ArshinWebSite\01_ArshinQuery\bin\Debug\net5.0\DiscountManagement.Application.Contract.pdb
+E:\ArshinWebSite\01_ArshinQuery\bin\Debug\net5.0\DiscountManagement.Domain.pdb

@@ -1,0 +1,26 @@
+﻿@model List<_01_ArshinQuery.Contracts.ProductCategory.ProductCategoryQueryModel>
+<section class="popular-categories section-padding">
+    <div class="container wow animate__animated animate__fadeIn">
+        <div class="section-title">
+            <h3>دسته بندی ویژه</h3>
+            <div class="slider-arrow slider-arrow-2 flex-right carausel-10-columns-arrow" id="carausel-10-columns-arrows"></div>
+        </div>
+        <div class="carausel-10-columns-cover position-relative">
+            <div class="carausel-10-columns" id="carausel-10-columns">
+                @foreach (var item in Model)
+                {
+                    <div class="card-2 bg-9 wow animate__animated animate__fadeInUp" data-wow-delay=".1s">
+                        <figure class="img-hover-scale overflow-hidden">
+                            <a asp-page="ProductCategory" asp-route-id="@item.Slug">
+                                
+                                <img src="/Theme/assets/imgs/shop/@item.Picture" alt="@item.PictureAlt">
+                            </a>
+                        </figure>
+                        <h6><a asp-page="ProductCategory"  asp-route-id="@item.Slug">@item.Name</a></h6>
+                        <span>@item.Products.Count محصول</span>
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+</section>

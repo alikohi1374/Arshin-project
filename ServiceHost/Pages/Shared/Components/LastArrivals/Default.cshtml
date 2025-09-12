@@ -1,0 +1,33 @@
+﻿@model List<_01_ArshinQuery.Contracts.Product.ProductQueryModel>
+
+
+    <div class="sidebar-widget product-sidebar mb-30 p-30 bg-grey border-radius-10">
+        <h5 class="section-title style-1 mb-30">محصولات جدید</h5>
+        
+        @foreach (var product in Model)
+        {
+            
+            <div class="single-post clearfix">
+                <div class="image">
+                    <img src="Theme/assets/imgs/shop/@product.Picture" alt=@product.PictureAlt 
+                         title=@product.PictureTitle>
+                </div>
+                <div class="content pt-10">
+                    <h5><a href="shop-product-detail.html">@product.Name</a></h5>
+                    @if (product.HasDiscount)
+                    {
+                        <p class="price mb-0 mt-5">@product.PriceWithDiscount تومان</p>
+                        <span style="text-decoration: InactiveBorder">@product.Price تومان</span>
+                    }
+                    else
+                    {
+                        <p class="price mb-0 mt-5">@product.Price تومان</p>
+                    }
+
+                </div>
+            </div>
+        }
+
+    </div>
+
+
