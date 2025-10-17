@@ -1,0 +1,15 @@
+E:\ArshinWebSite\AccountManagement.Application.Contracts\bin\Debug\net5.0\AccountManagement.Application.Contracts.deps.json
+E:\ArshinWebSite\AccountManagement.Application.Contracts\bin\Debug\net5.0\AccountManagement.Application.Contracts.dll
+E:\ArshinWebSite\AccountManagement.Application.Contracts\bin\Debug\net5.0\ref\AccountManagement.Application.Contracts.dll
+E:\ArshinWebSite\AccountManagement.Application.Contracts\bin\Debug\net5.0\AccountManagement.Application.Contracts.pdb
+E:\ArshinWebSite\AccountManagement.Application.Contracts\bin\Debug\net5.0\0_Framework.dll
+E:\ArshinWebSite\AccountManagement.Application.Contracts\bin\Debug\net5.0\0_Framework.pdb
+E:\ArshinWebSite\AccountManagement.Application.Contracts\obj\Debug\net5.0\AccountManagement.Application.Contracts.csproj.AssemblyReference.cache
+E:\ArshinWebSite\AccountManagement.Application.Contracts\obj\Debug\net5.0\AccountManagement.Application.Contracts.GeneratedMSBuildEditorConfig.editorconfig
+E:\ArshinWebSite\AccountManagement.Application.Contracts\obj\Debug\net5.0\AccountManagement.Application.Contracts.AssemblyInfoInputs.cache
+E:\ArshinWebSite\AccountManagement.Application.Contracts\obj\Debug\net5.0\AccountManagement.Application.Contracts.AssemblyInfo.cs
+E:\ArshinWebSite\AccountManagement.Application.Contracts\obj\Debug\net5.0\AccountManagement.Application.Contracts.csproj.CoreCompileInputs.cache
+E:\ArshinWebSite\AccountManagement.Application.Contracts\obj\Debug\net5.0\AccountManagement.Application.Contracts.csproj.CopyComplete
+E:\ArshinWebSite\AccountManagement.Application.Contracts\obj\Debug\net5.0\AccountManagement.Application.Contracts.dll
+E:\ArshinWebSite\AccountManagement.Application.Contracts\obj\Debug\net5.0\ref\AccountManagement.Application.Contracts.dll
+E:\ArshinWebSite\AccountManagement.Application.Contracts\obj\Debug\net5.0\AccountManagement.Application.Contracts.pdb

@@ -62,7 +62,7 @@ namespace _01_ArshinQuery.Query
                 foreach (var product in category.Products)
                 {
                     var productInventory = inventory.FirstOrDefault(x => x.ProductId == product.Id);
-                    if (productInventory != null)
+                    if(productInventory != null)
                     {
                         var price = productInventory.UnitPrice;
                         product.Price = price.ToMoney();

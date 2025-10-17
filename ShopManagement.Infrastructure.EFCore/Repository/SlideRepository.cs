@@ -1,12 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Globalization;
+﻿using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using _0_Framework.Application;
 using _0_Framework.Infrastructure;
-using Microsoft.EntityFrameworkCore;
 using ShopManagement.Application.Contracts.Slide;
 using ShopManagement.Domain.SlideAgg;
 
@@ -29,7 +24,6 @@ namespace ShopManagement.Infrastructure.EFCore.Repository
                 Text = X.Text,
                 Heading = X.Heading,
                 Id = X.Id,
-                Picture = X.Picture,
                 PictureAlt = X.PictureAlt,
                 Title = X.Title
             }).FirstOrDefault(x => x.Id == id);

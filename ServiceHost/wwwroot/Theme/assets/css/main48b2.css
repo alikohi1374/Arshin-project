@@ -36,6 +36,7 @@ thead {
   font-weight: 600;
 }
 
+
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
   display: block;
@@ -11908,6 +11909,79 @@ footer .hotline img {
     padding-right: 0 !important;
   }
 }
+
+
+#cartMessage {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(76, 175, 80, 0.9);
+    color: #fff;
+    padding: 15px 40px 10px 20px;
+    border-radius: 8px;
+    z-index: 9999;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    text-align: center;
+    font-size: 15px;
+    min-width: 320px;
+    opacity: 0;
+}
+
+#cartMessage p {
+    margin: 0;
+    color: #fff;
+}
+
+#cartMessageClose {
+    position: absolute;
+    top: 8px;
+    right: 12px;
+    font-size: 18px;
+    line-height: 18px;
+    cursor: pointer;
+}
+
+#cartMessageProgress {
+    height: 4px;
+    background: rgba(255,255,255,0.7);
+    margin-top: 10px;
+    width: 0%;
+    border-radius: 2px;
+}
+
+
+@keyframes bounceDown {
+    0% {
+        top: -100px;
+        opacity: 0;
+    }
+
+    60% {
+        top: 30px;
+        opacity: 1;
+    }
+
+    80% {
+        top: 15px;
+    }
+
+    100% {
+        top: 20px;
+    }
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
 
 /*Desktop*/
 @media only screen and (min-width: 992px) and (max-width: 1199px) {

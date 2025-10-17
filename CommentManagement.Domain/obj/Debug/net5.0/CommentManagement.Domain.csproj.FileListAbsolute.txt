@@ -1,0 +1,17 @@
+E:\ArshinWebSite\CommentManagement.Domain\bin\Debug\net5.0\CommentManagement.Domain.deps.json
+E:\ArshinWebSite\CommentManagement.Domain\bin\Debug\net5.0\CommentManagement.Domain.dll
+E:\ArshinWebSite\CommentManagement.Domain\bin\Debug\net5.0\ref\CommentManagement.Domain.dll
+E:\ArshinWebSite\CommentManagement.Domain\bin\Debug\net5.0\CommentManagement.Domain.pdb
+E:\ArshinWebSite\CommentManagement.Domain\bin\Debug\net5.0\0_Framework.dll
+E:\ArshinWebSite\CommentManagement.Domain\bin\Debug\net5.0\CommentManagement.Application.Contracts.dll
+E:\ArshinWebSite\CommentManagement.Domain\bin\Debug\net5.0\0_Framework.pdb
+E:\ArshinWebSite\CommentManagement.Domain\bin\Debug\net5.0\CommentManagement.Application.Contracts.pdb
+E:\ArshinWebSite\CommentManagement.Domain\obj\Debug\net5.0\CommentManagement.Domain.csproj.AssemblyReference.cache
+E:\ArshinWebSite\CommentManagement.Domain\obj\Debug\net5.0\CommentManagement.Domain.GeneratedMSBuildEditorConfig.editorconfig
+E:\ArshinWebSite\CommentManagement.Domain\obj\Debug\net5.0\CommentManagement.Domain.AssemblyInfoInputs.cache
+E:\ArshinWebSite\CommentManagement.Domain\obj\Debug\net5.0\CommentManagement.Domain.AssemblyInfo.cs
+E:\ArshinWebSite\CommentManagement.Domain\obj\Debug\net5.0\CommentManagement.Domain.csproj.CoreCompileInputs.cache
+E:\ArshinWebSite\CommentManagement.Domain\obj\Debug\net5.0\CommentManagement.Domain.csproj.CopyComplete
+E:\ArshinWebSite\CommentManagement.Domain\obj\Debug\net5.0\CommentManagement.Domain.dll
+E:\ArshinWebSite\CommentManagement.Domain\obj\Debug\net5.0\ref\CommentManagement.Domain.dll
+E:\ArshinWebSite\CommentManagement.Domain\obj\Debug\net5.0\CommentManagement.Domain.pdb

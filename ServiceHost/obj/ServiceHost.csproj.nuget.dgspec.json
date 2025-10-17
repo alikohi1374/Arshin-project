@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\ArshinWebSite\\ServiceHost\\ServiceHost.csproj": {}
+    "D:\\ArshinWebSite\\ServiceHost\\ServiceHost.csproj": {}
   },
   "projects": {
-    "E:\\ArshinWebSite\\01_ArshinQuery\\01_ArshinQuery.csproj": {
+    "D:\\ArshinWebSite\\01_ArshinQuery\\01_ArshinQuery.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\ArshinWebSite\\01_ArshinQuery\\01_ArshinQuery.csproj",
+        "projectUniqueName": "D:\\ArshinWebSite\\01_ArshinQuery\\01_ArshinQuery.csproj",
         "projectName": "01_ArshinQuery",
-        "projectPath": "E:\\ArshinWebSite\\01_ArshinQuery\\01_ArshinQuery.csproj",
+        "projectPath": "D:\\ArshinWebSite\\01_ArshinQuery\\01_ArshinQuery.csproj",
         "packagesPath": "C:\\Users\\Nafas\\.nuget\\packages\\",
-        "outputPath": "E:\\ArshinWebSite\\01_ArshinQuery\\obj\\",
+        "outputPath": "D:\\ArshinWebSite\\01_ArshinQuery\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -32,14 +32,17 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "E:\\ArshinWebSite\\DiscountManagement.Infrastructure.EFCore\\DiscountManagement.Infrastructure.EFCore.csproj": {
-                "projectPath": "E:\\ArshinWebSite\\DiscountManagement.Infrastructure.EFCore\\DiscountManagement.Infrastructure.EFCore.csproj"
+              "D:\\ArshinWebSite\\CommnetManagement.Infrastructure.EFCore\\CommnetManagement.Infrastructure.EFCore.csproj": {
+                "projectPath": "D:\\ArshinWebSite\\CommnetManagement.Infrastructure.EFCore\\CommnetManagement.Infrastructure.EFCore.csproj"
               },
-              "E:\\ArshinWebSite\\InventoryManagement.Infrastructure.EFCore\\InventoryManagement.Infrastructure.EFCore.csproj": {
-                "projectPath": "E:\\ArshinWebSite\\InventoryManagement.Infrastructure.EFCore\\InventoryManagement.Infrastructure.EFCore.csproj"
+              "D:\\ArshinWebSite\\DiscountManagement.Infrastructure.EFCore\\DiscountManagement.Infrastructure.EFCore.csproj": {
+                "projectPath": "D:\\ArshinWebSite\\DiscountManagement.Infrastructure.EFCore\\DiscountManagement.Infrastructure.EFCore.csproj"
               },
-              "E:\\ArshinWebSite\\ShopManagement.Infrastructure.EFCore\\ShopManagement.Infrastructure.EFCore.csproj": {
-                "projectPath": "E:\\ArshinWebSite\\ShopManagement.Infrastructure.EFCore\\ShopManagement.Infrastructure.EFCore.csproj"
+              "D:\\ArshinWebSite\\InventoryManagement.Infrastructure.EFCore\\InventoryManagement.Infrastructure.EFCore.csproj": {
+                "projectPath": "D:\\ArshinWebSite\\InventoryManagement.Infrastructure.EFCore\\InventoryManagement.Infrastructure.EFCore.csproj"
+              },
+              "D:\\ArshinWebSite\\ShopManagement.Infrastructure.EFCore\\ShopManagement.Infrastructure.EFCore.csproj": {
+                "projectPath": "D:\\ArshinWebSite\\ShopManagement.Infrastructure.EFCore\\ShopManagement.Infrastructure.EFCore.csproj"
               }
             }
           }
@@ -72,14 +75,14 @@
         }
       }
     },
-    "E:\\ArshinWebSite\\0_Framework\\0_Framework.csproj": {
+    "D:\\ArshinWebSite\\0_Framework\\0_Framework.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\ArshinWebSite\\0_Framework\\0_Framework.csproj",
+        "projectUniqueName": "D:\\ArshinWebSite\\0_Framework\\0_Framework.csproj",
         "projectName": "0_Framework",
-        "projectPath": "E:\\ArshinWebSite\\0_Framework\\0_Framework.csproj",
+        "projectPath": "D:\\ArshinWebSite\\0_Framework\\0_Framework.csproj",
         "packagesPath": "C:\\Users\\Nafas\\.nuget\\packages\\",
-        "outputPath": "E:\\ArshinWebSite\\0_Framework\\obj\\",
+        "outputPath": "D:\\ArshinWebSite\\0_Framework\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -112,7 +115,374 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "dependencies": {
+            "Microsoft.AspNetCore.Authentication.Abstractions": {
+              "target": "Package",
+              "version": "[2.3.0, )"
+            },
+            "Microsoft.AspNetCore.Authentication.Cookies": {
+              "target": "Package",
+              "version": "[2.3.0, )"
+            },
+            "Microsoft.AspNetCore.Http.Features": {
+              "target": "Package",
+              "version": "[5.0.17, )"
+            },
+            "Microsoft.AspNetCore.Mvc.Abstractions": {
+              "target": "Package",
+              "version": "[2.3.0, )"
+            },
             "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.17, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.416\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\ArshinWebSite\\AccountManagement.Application.Contracts\\AccountManagement.Application.Contracts.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\ArshinWebSite\\AccountManagement.Application.Contracts\\AccountManagement.Application.Contracts.csproj",
+        "projectName": "AccountManagement.Application.Contracts",
+        "projectPath": "D:\\ArshinWebSite\\AccountManagement.Application.Contracts\\AccountManagement.Application.Contracts.csproj",
+        "packagesPath": "C:\\Users\\Nafas\\.nuget\\packages\\",
+        "outputPath": "D:\\ArshinWebSite\\AccountManagement.Application.Contracts\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Nafas\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "D:\\ArshinWebSite\\0_Framework\\0_Framework.csproj": {
+                "projectPath": "D:\\ArshinWebSite\\0_Framework\\0_Framework.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.416\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\ArshinWebSite\\AccountManagement.Application\\AccountManagement.Application.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\ArshinWebSite\\AccountManagement.Application\\AccountManagement.Application.csproj",
+        "projectName": "AccountManagement.Application",
+        "projectPath": "D:\\ArshinWebSite\\AccountManagement.Application\\AccountManagement.Application.csproj",
+        "packagesPath": "C:\\Users\\Nafas\\.nuget\\packages\\",
+        "outputPath": "D:\\ArshinWebSite\\AccountManagement.Application\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Nafas\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "D:\\ArshinWebSite\\AccountManagement.Application.Contracts\\AccountManagement.Application.Contracts.csproj": {
+                "projectPath": "D:\\ArshinWebSite\\AccountManagement.Application.Contracts\\AccountManagement.Application.Contracts.csproj"
+              },
+              "D:\\ArshinWebSite\\AccountManagement.Domain\\AccountManagement.Domain.csproj": {
+                "projectPath": "D:\\ArshinWebSite\\AccountManagement.Domain\\AccountManagement.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.416\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\ArshinWebSite\\AccountManagement.Configuration\\AccountManagement.Configuration.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\ArshinWebSite\\AccountManagement.Configuration\\AccountManagement.Configuration.csproj",
+        "projectName": "AccountManagement.Configuration",
+        "projectPath": "D:\\ArshinWebSite\\AccountManagement.Configuration\\AccountManagement.Configuration.csproj",
+        "packagesPath": "C:\\Users\\Nafas\\.nuget\\packages\\",
+        "outputPath": "D:\\ArshinWebSite\\AccountManagement.Configuration\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Nafas\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "D:\\ArshinWebSite\\AccountManagement.Application.Contracts\\AccountManagement.Application.Contracts.csproj": {
+                "projectPath": "D:\\ArshinWebSite\\AccountManagement.Application.Contracts\\AccountManagement.Application.Contracts.csproj"
+              },
+              "D:\\ArshinWebSite\\AccountManagement.Application\\AccountManagement.Application.csproj": {
+                "projectPath": "D:\\ArshinWebSite\\AccountManagement.Application\\AccountManagement.Application.csproj"
+              },
+              "D:\\ArshinWebSite\\AccountManagement.Domain\\AccountManagement.Domain.csproj": {
+                "projectPath": "D:\\ArshinWebSite\\AccountManagement.Domain\\AccountManagement.Domain.csproj"
+              },
+              "D:\\ArshinWebSite\\AccountMangement.Infrastructure.EFCore\\AccountMangement.Infrastructure.EFCore.csproj": {
+                "projectPath": "D:\\ArshinWebSite\\AccountMangement.Infrastructure.EFCore\\AccountMangement.Infrastructure.EFCore.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "Microsoft.Extensions.DependencyInjection.Abstractions": {
+              "target": "Package",
+              "version": "[9.0.8, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.416\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\ArshinWebSite\\AccountManagement.Domain\\AccountManagement.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\ArshinWebSite\\AccountManagement.Domain\\AccountManagement.Domain.csproj",
+        "projectName": "AccountManagement.Domain",
+        "projectPath": "D:\\ArshinWebSite\\AccountManagement.Domain\\AccountManagement.Domain.csproj",
+        "packagesPath": "C:\\Users\\Nafas\\.nuget\\packages\\",
+        "outputPath": "D:\\ArshinWebSite\\AccountManagement.Domain\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Nafas\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "D:\\ArshinWebSite\\0_Framework\\0_Framework.csproj": {
+                "projectPath": "D:\\ArshinWebSite\\0_Framework\\0_Framework.csproj"
+              },
+              "D:\\ArshinWebSite\\AccountManagement.Application.Contracts\\AccountManagement.Application.Contracts.csproj": {
+                "projectPath": "D:\\ArshinWebSite\\AccountManagement.Application.Contracts\\AccountManagement.Application.Contracts.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.416\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\ArshinWebSite\\AccountMangement.Infrastructure.EFCore\\AccountMangement.Infrastructure.EFCore.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\ArshinWebSite\\AccountMangement.Infrastructure.EFCore\\AccountMangement.Infrastructure.EFCore.csproj",
+        "projectName": "AccountMangement.Infrastructure.EFCore",
+        "projectPath": "D:\\ArshinWebSite\\AccountMangement.Infrastructure.EFCore\\AccountMangement.Infrastructure.EFCore.csproj",
+        "packagesPath": "C:\\Users\\Nafas\\.nuget\\packages\\",
+        "outputPath": "D:\\ArshinWebSite\\AccountMangement.Infrastructure.EFCore\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Nafas\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "D:\\ArshinWebSite\\AccountManagement.Domain\\AccountManagement.Domain.csproj": {
+                "projectPath": "D:\\ArshinWebSite\\AccountManagement.Domain\\AccountManagement.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.17, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[5.0.17, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
               "target": "Package",
               "version": "[5.0.17, )"
             }
@@ -136,14 +506,355 @@
         }
       }
     },
-    "E:\\ArshinWebSite\\CustomerDiscount.Application.Contract\\DiscountManagement.Application.Contract.csproj": {
+    "D:\\ArshinWebSite\\CommentManagement.Application.Contracts\\CommentManagement.Application.Contracts.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\ArshinWebSite\\CustomerDiscount.Application.Contract\\DiscountManagement.Application.Contract.csproj",
+        "projectUniqueName": "D:\\ArshinWebSite\\CommentManagement.Application.Contracts\\CommentManagement.Application.Contracts.csproj",
+        "projectName": "CommentManagement.Application.Contracts",
+        "projectPath": "D:\\ArshinWebSite\\CommentManagement.Application.Contracts\\CommentManagement.Application.Contracts.csproj",
+        "packagesPath": "C:\\Users\\Nafas\\.nuget\\packages\\",
+        "outputPath": "D:\\ArshinWebSite\\CommentManagement.Application.Contracts\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Nafas\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "D:\\ArshinWebSite\\0_Framework\\0_Framework.csproj": {
+                "projectPath": "D:\\ArshinWebSite\\0_Framework\\0_Framework.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.416\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\ArshinWebSite\\CommentManagement.Application\\CommentManagement.Application.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\ArshinWebSite\\CommentManagement.Application\\CommentManagement.Application.csproj",
+        "projectName": "CommentManagement.Application",
+        "projectPath": "D:\\ArshinWebSite\\CommentManagement.Application\\CommentManagement.Application.csproj",
+        "packagesPath": "C:\\Users\\Nafas\\.nuget\\packages\\",
+        "outputPath": "D:\\ArshinWebSite\\CommentManagement.Application\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Nafas\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "D:\\ArshinWebSite\\0_Framework\\0_Framework.csproj": {
+                "projectPath": "D:\\ArshinWebSite\\0_Framework\\0_Framework.csproj"
+              },
+              "D:\\ArshinWebSite\\CommentManagement.Domain\\CommentManagement.Domain.csproj": {
+                "projectPath": "D:\\ArshinWebSite\\CommentManagement.Domain\\CommentManagement.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.416\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\ArshinWebSite\\CommentManagement.Domain\\CommentManagement.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\ArshinWebSite\\CommentManagement.Domain\\CommentManagement.Domain.csproj",
+        "projectName": "CommentManagement.Domain",
+        "projectPath": "D:\\ArshinWebSite\\CommentManagement.Domain\\CommentManagement.Domain.csproj",
+        "packagesPath": "C:\\Users\\Nafas\\.nuget\\packages\\",
+        "outputPath": "D:\\ArshinWebSite\\CommentManagement.Domain\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Nafas\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "D:\\ArshinWebSite\\0_Framework\\0_Framework.csproj": {
+                "projectPath": "D:\\ArshinWebSite\\0_Framework\\0_Framework.csproj"
+              },
+              "D:\\ArshinWebSite\\CommentManagement.Application.Contracts\\CommentManagement.Application.Contracts.csproj": {
+                "projectPath": "D:\\ArshinWebSite\\CommentManagement.Application.Contracts\\CommentManagement.Application.Contracts.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.416\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\ArshinWebSite\\CommentManagement.Infrastructure.Configuration\\CommentManagement.Infrastructure.Configuration.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\ArshinWebSite\\CommentManagement.Infrastructure.Configuration\\CommentManagement.Infrastructure.Configuration.csproj",
+        "projectName": "CommentManagement.Infrastructure.Configuration",
+        "projectPath": "D:\\ArshinWebSite\\CommentManagement.Infrastructure.Configuration\\CommentManagement.Infrastructure.Configuration.csproj",
+        "packagesPath": "C:\\Users\\Nafas\\.nuget\\packages\\",
+        "outputPath": "D:\\ArshinWebSite\\CommentManagement.Infrastructure.Configuration\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Nafas\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "D:\\ArshinWebSite\\CommentManagement.Application\\CommentManagement.Application.csproj": {
+                "projectPath": "D:\\ArshinWebSite\\CommentManagement.Application\\CommentManagement.Application.csproj"
+              },
+              "D:\\ArshinWebSite\\CommentManagement.Domain\\CommentManagement.Domain.csproj": {
+                "projectPath": "D:\\ArshinWebSite\\CommentManagement.Domain\\CommentManagement.Domain.csproj"
+              },
+              "D:\\ArshinWebSite\\CommnetManagement.Infrastructure.EFCore\\CommnetManagement.Infrastructure.EFCore.csproj": {
+                "projectPath": "D:\\ArshinWebSite\\CommnetManagement.Infrastructure.EFCore\\CommnetManagement.Infrastructure.EFCore.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.416\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\ArshinWebSite\\CommnetManagement.Infrastructure.EFCore\\CommnetManagement.Infrastructure.EFCore.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\ArshinWebSite\\CommnetManagement.Infrastructure.EFCore\\CommnetManagement.Infrastructure.EFCore.csproj",
+        "projectName": "CommnetManagement.Infrastructure.EFCore",
+        "projectPath": "D:\\ArshinWebSite\\CommnetManagement.Infrastructure.EFCore\\CommnetManagement.Infrastructure.EFCore.csproj",
+        "packagesPath": "C:\\Users\\Nafas\\.nuget\\packages\\",
+        "outputPath": "D:\\ArshinWebSite\\CommnetManagement.Infrastructure.EFCore\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Nafas\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "D:\\ArshinWebSite\\0_Framework\\0_Framework.csproj": {
+                "projectPath": "D:\\ArshinWebSite\\0_Framework\\0_Framework.csproj"
+              },
+              "D:\\ArshinWebSite\\CommentManagement.Domain\\CommentManagement.Domain.csproj": {
+                "projectPath": "D:\\ArshinWebSite\\CommentManagement.Domain\\CommentManagement.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.17, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[5.0.17, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.17, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.416\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\ArshinWebSite\\CustomerDiscount.Application.Contract\\DiscountManagement.Application.Contract.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\ArshinWebSite\\CustomerDiscount.Application.Contract\\DiscountManagement.Application.Contract.csproj",
         "projectName": "DiscountManagement.Application.Contract",
-        "projectPath": "E:\\ArshinWebSite\\CustomerDiscount.Application.Contract\\DiscountManagement.Application.Contract.csproj",
+        "projectPath": "D:\\ArshinWebSite\\CustomerDiscount.Application.Contract\\DiscountManagement.Application.Contract.csproj",
         "packagesPath": "C:\\Users\\Nafas\\.nuget\\packages\\",
-        "outputPath": "E:\\ArshinWebSite\\CustomerDiscount.Application.Contract\\obj\\",
+        "outputPath": "D:\\ArshinWebSite\\CustomerDiscount.Application.Contract\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -164,11 +875,11 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "E:\\ArshinWebSite\\0_Framework\\0_Framework.csproj": {
-                "projectPath": "E:\\ArshinWebSite\\0_Framework\\0_Framework.csproj"
+              "D:\\ArshinWebSite\\0_Framework\\0_Framework.csproj": {
+                "projectPath": "D:\\ArshinWebSite\\0_Framework\\0_Framework.csproj"
               },
-              "E:\\ArshinWebSite\\ShopManagement.Application.Contracts\\ShopManagement.Application.Contracts.csproj": {
-                "projectPath": "E:\\ArshinWebSite\\ShopManagement.Application.Contracts\\ShopManagement.Application.Contracts.csproj"
+              "D:\\ArshinWebSite\\ShopManagement.Application.Contracts\\ShopManagement.Application.Contracts.csproj": {
+                "projectPath": "D:\\ArshinWebSite\\ShopManagement.Application.Contracts\\ShopManagement.Application.Contracts.csproj"
               }
             }
           }
@@ -201,14 +912,14 @@
         }
       }
     },
-    "E:\\ArshinWebSite\\DiscountManagement.Application\\DiscountManagement.Application.csproj": {
+    "D:\\ArshinWebSite\\DiscountManagement.Application\\DiscountManagement.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\ArshinWebSite\\DiscountManagement.Application\\DiscountManagement.Application.csproj",
+        "projectUniqueName": "D:\\ArshinWebSite\\DiscountManagement.Application\\DiscountManagement.Application.csproj",
         "projectName": "DiscountManagement.Application",
-        "projectPath": "E:\\ArshinWebSite\\DiscountManagement.Application\\DiscountManagement.Application.csproj",
+        "projectPath": "D:\\ArshinWebSite\\DiscountManagement.Application\\DiscountManagement.Application.csproj",
         "packagesPath": "C:\\Users\\Nafas\\.nuget\\packages\\",
-        "outputPath": "E:\\ArshinWebSite\\DiscountManagement.Application\\obj\\",
+        "outputPath": "D:\\ArshinWebSite\\DiscountManagement.Application\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -229,11 +940,11 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "E:\\ArshinWebSite\\CustomerDiscount.Application.Contract\\DiscountManagement.Application.Contract.csproj": {
-                "projectPath": "E:\\ArshinWebSite\\CustomerDiscount.Application.Contract\\DiscountManagement.Application.Contract.csproj"
+              "D:\\ArshinWebSite\\CustomerDiscount.Application.Contract\\DiscountManagement.Application.Contract.csproj": {
+                "projectPath": "D:\\ArshinWebSite\\CustomerDiscount.Application.Contract\\DiscountManagement.Application.Contract.csproj"
               },
-              "E:\\ArshinWebSite\\DiscountManagement.Domain\\DiscountManagement.Domain.csproj": {
-                "projectPath": "E:\\ArshinWebSite\\DiscountManagement.Domain\\DiscountManagement.Domain.csproj"
+              "D:\\ArshinWebSite\\DiscountManagement.Domain\\DiscountManagement.Domain.csproj": {
+                "projectPath": "D:\\ArshinWebSite\\DiscountManagement.Domain\\DiscountManagement.Domain.csproj"
               }
             }
           }
@@ -266,14 +977,14 @@
         }
       }
     },
-    "E:\\ArshinWebSite\\DiscountManagement.Configuration\\DiscountManagement.Configuration.csproj": {
+    "D:\\ArshinWebSite\\DiscountManagement.Configuration\\DiscountManagement.Configuration.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\ArshinWebSite\\DiscountManagement.Configuration\\DiscountManagement.Configuration.csproj",
+        "projectUniqueName": "D:\\ArshinWebSite\\DiscountManagement.Configuration\\DiscountManagement.Configuration.csproj",
         "projectName": "DiscountManagement.Configuration",
-        "projectPath": "E:\\ArshinWebSite\\DiscountManagement.Configuration\\DiscountManagement.Configuration.csproj",
+        "projectPath": "D:\\ArshinWebSite\\DiscountManagement.Configuration\\DiscountManagement.Configuration.csproj",
         "packagesPath": "C:\\Users\\Nafas\\.nuget\\packages\\",
-        "outputPath": "E:\\ArshinWebSite\\DiscountManagement.Configuration\\obj\\",
+        "outputPath": "D:\\ArshinWebSite\\DiscountManagement.Configuration\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -294,14 +1005,14 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "E:\\ArshinWebSite\\CustomerDiscount.Application.Contract\\DiscountManagement.Application.Contract.csproj": {
-                "projectPath": "E:\\ArshinWebSite\\CustomerDiscount.Application.Contract\\DiscountManagement.Application.Contract.csproj"
+              "D:\\ArshinWebSite\\CustomerDiscount.Application.Contract\\DiscountManagement.Application.Contract.csproj": {
+                "projectPath": "D:\\ArshinWebSite\\CustomerDiscount.Application.Contract\\DiscountManagement.Application.Contract.csproj"
               },
-              "E:\\ArshinWebSite\\DiscountManagement.Application\\DiscountManagement.Application.csproj": {
-                "projectPath": "E:\\ArshinWebSite\\DiscountManagement.Application\\DiscountManagement.Application.csproj"
+              "D:\\ArshinWebSite\\DiscountManagement.Application\\DiscountManagement.Application.csproj": {
+                "projectPath": "D:\\ArshinWebSite\\DiscountManagement.Application\\DiscountManagement.Application.csproj"
               },
-              "E:\\ArshinWebSite\\DiscountManagement.Infrastructure.EFCore\\DiscountManagement.Infrastructure.EFCore.csproj": {
-                "projectPath": "E:\\ArshinWebSite\\DiscountManagement.Infrastructure.EFCore\\DiscountManagement.Infrastructure.EFCore.csproj"
+              "D:\\ArshinWebSite\\DiscountManagement.Infrastructure.EFCore\\DiscountManagement.Infrastructure.EFCore.csproj": {
+                "projectPath": "D:\\ArshinWebSite\\DiscountManagement.Infrastructure.EFCore\\DiscountManagement.Infrastructure.EFCore.csproj"
               }
             }
           }
@@ -340,14 +1051,14 @@
         }
       }
     },
-    "E:\\ArshinWebSite\\DiscountManagement.Domain\\DiscountManagement.Domain.csproj": {
+    "D:\\ArshinWebSite\\DiscountManagement.Domain\\DiscountManagement.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\ArshinWebSite\\DiscountManagement.Domain\\DiscountManagement.Domain.csproj",
+        "projectUniqueName": "D:\\ArshinWebSite\\DiscountManagement.Domain\\DiscountManagement.Domain.csproj",
         "projectName": "DiscountManagement.Domain",
-        "projectPath": "E:\\ArshinWebSite\\DiscountManagement.Domain\\DiscountManagement.Domain.csproj",
+        "projectPath": "D:\\ArshinWebSite\\DiscountManagement.Domain\\DiscountManagement.Domain.csproj",
         "packagesPath": "C:\\Users\\Nafas\\.nuget\\packages\\",
-        "outputPath": "E:\\ArshinWebSite\\DiscountManagement.Domain\\obj\\",
+        "outputPath": "D:\\ArshinWebSite\\DiscountManagement.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -368,11 +1079,11 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "E:\\ArshinWebSite\\0_Framework\\0_Framework.csproj": {
-                "projectPath": "E:\\ArshinWebSite\\0_Framework\\0_Framework.csproj"
+              "D:\\ArshinWebSite\\0_Framework\\0_Framework.csproj": {
+                "projectPath": "D:\\ArshinWebSite\\0_Framework\\0_Framework.csproj"
               },
-              "E:\\ArshinWebSite\\CustomerDiscount.Application.Contract\\DiscountManagement.Application.Contract.csproj": {
-                "projectPath": "E:\\ArshinWebSite\\CustomerDiscount.Application.Contract\\DiscountManagement.Application.Contract.csproj"
+              "D:\\ArshinWebSite\\CustomerDiscount.Application.Contract\\DiscountManagement.Application.Contract.csproj": {
+                "projectPath": "D:\\ArshinWebSite\\CustomerDiscount.Application.Contract\\DiscountManagement.Application.Contract.csproj"
               }
             }
           }
@@ -405,14 +1116,14 @@
         }
       }
     },
-    "E:\\ArshinWebSite\\DiscountManagement.Infrastructure.EFCore\\DiscountManagement.Infrastructure.EFCore.csproj": {
+    "D:\\ArshinWebSite\\DiscountManagement.Infrastructure.EFCore\\DiscountManagement.Infrastructure.EFCore.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\ArshinWebSite\\DiscountManagement.Infrastructure.EFCore\\DiscountManagement.Infrastructure.EFCore.csproj",
+        "projectUniqueName": "D:\\ArshinWebSite\\DiscountManagement.Infrastructure.EFCore\\DiscountManagement.Infrastructure.EFCore.csproj",
         "projectName": "DiscountManagement.Infrastructure.EFCore",
-        "projectPath": "E:\\ArshinWebSite\\DiscountManagement.Infrastructure.EFCore\\DiscountManagement.Infrastructure.EFCore.csproj",
+        "projectPath": "D:\\ArshinWebSite\\DiscountManagement.Infrastructure.EFCore\\DiscountManagement.Infrastructure.EFCore.csproj",
         "packagesPath": "C:\\Users\\Nafas\\.nuget\\packages\\",
-        "outputPath": "E:\\ArshinWebSite\\DiscountManagement.Infrastructure.EFCore\\obj\\",
+        "outputPath": "D:\\ArshinWebSite\\DiscountManagement.Infrastructure.EFCore\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -433,11 +1144,11 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "E:\\ArshinWebSite\\DiscountManagement.Domain\\DiscountManagement.Domain.csproj": {
-                "projectPath": "E:\\ArshinWebSite\\DiscountManagement.Domain\\DiscountManagement.Domain.csproj"
+              "D:\\ArshinWebSite\\DiscountManagement.Domain\\DiscountManagement.Domain.csproj": {
+                "projectPath": "D:\\ArshinWebSite\\DiscountManagement.Domain\\DiscountManagement.Domain.csproj"
               },
-              "E:\\ArshinWebSite\\ShopManagement.Infrastructure.EFCore\\ShopManagement.Infrastructure.EFCore.csproj": {
-                "projectPath": "E:\\ArshinWebSite\\ShopManagement.Infrastructure.EFCore\\ShopManagement.Infrastructure.EFCore.csproj"
+              "D:\\ArshinWebSite\\ShopManagement.Infrastructure.EFCore\\ShopManagement.Infrastructure.EFCore.csproj": {
+                "projectPath": "D:\\ArshinWebSite\\ShopManagement.Infrastructure.EFCore\\ShopManagement.Infrastructure.EFCore.csproj"
               }
             }
           }
@@ -486,14 +1197,14 @@
         }
       }
     },
-    "E:\\ArshinWebSite\\InventoryManagement.Application.Contract\\InventoryManagement.Application.Contract.csproj": {
+    "D:\\ArshinWebSite\\InventoryManagement.Application.Contract\\InventoryManagement.Application.Contract.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\ArshinWebSite\\InventoryManagement.Application.Contract\\InventoryManagement.Application.Contract.csproj",
+        "projectUniqueName": "D:\\ArshinWebSite\\InventoryManagement.Application.Contract\\InventoryManagement.Application.Contract.csproj",
         "projectName": "InventoryManagement.Application.Contract",
-        "projectPath": "E:\\ArshinWebSite\\InventoryManagement.Application.Contract\\InventoryManagement.Application.Contract.csproj",
+        "projectPath": "D:\\ArshinWebSite\\InventoryManagement.Application.Contract\\InventoryManagement.Application.Contract.csproj",
         "packagesPath": "C:\\Users\\Nafas\\.nuget\\packages\\",
-        "outputPath": "E:\\ArshinWebSite\\InventoryManagement.Application.Contract\\obj\\",
+        "outputPath": "D:\\ArshinWebSite\\InventoryManagement.Application.Contract\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -514,11 +1225,11 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "E:\\ArshinWebSite\\0_Framework\\0_Framework.csproj": {
-                "projectPath": "E:\\ArshinWebSite\\0_Framework\\0_Framework.csproj"
+              "D:\\ArshinWebSite\\0_Framework\\0_Framework.csproj": {
+                "projectPath": "D:\\ArshinWebSite\\0_Framework\\0_Framework.csproj"
               },
-              "E:\\ArshinWebSite\\ShopManagement.Application.Contracts\\ShopManagement.Application.Contracts.csproj": {
-                "projectPath": "E:\\ArshinWebSite\\ShopManagement.Application.Contracts\\ShopManagement.Application.Contracts.csproj"
+              "D:\\ArshinWebSite\\ShopManagement.Application.Contracts\\ShopManagement.Application.Contracts.csproj": {
+                "projectPath": "D:\\ArshinWebSite\\ShopManagement.Application.Contracts\\ShopManagement.Application.Contracts.csproj"
               }
             }
           }
@@ -551,14 +1262,14 @@
         }
       }
     },
-    "E:\\ArshinWebSite\\InventoryManagement.Application\\InventoryManagement.Application.csproj": {
+    "D:\\ArshinWebSite\\InventoryManagement.Application\\InventoryManagement.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\ArshinWebSite\\InventoryManagement.Application\\InventoryManagement.Application.csproj",
+        "projectUniqueName": "D:\\ArshinWebSite\\InventoryManagement.Application\\InventoryManagement.Application.csproj",
         "projectName": "InventoryManagement.Application",
-        "projectPath": "E:\\ArshinWebSite\\InventoryManagement.Application\\InventoryManagement.Application.csproj",
+        "projectPath": "D:\\ArshinWebSite\\InventoryManagement.Application\\InventoryManagement.Application.csproj",
         "packagesPath": "C:\\Users\\Nafas\\.nuget\\packages\\",
-        "outputPath": "E:\\ArshinWebSite\\InventoryManagement.Application\\obj\\",
+        "outputPath": "D:\\ArshinWebSite\\InventoryManagement.Application\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -579,11 +1290,11 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "E:\\ArshinWebSite\\InventoryManagement.Application.Contract\\InventoryManagement.Application.Contract.csproj": {
-                "projectPath": "E:\\ArshinWebSite\\InventoryManagement.Application.Contract\\InventoryManagement.Application.Contract.csproj"
+              "D:\\ArshinWebSite\\InventoryManagement.Application.Contract\\InventoryManagement.Application.Contract.csproj": {
+                "projectPath": "D:\\ArshinWebSite\\InventoryManagement.Application.Contract\\InventoryManagement.Application.Contract.csproj"
               },
-              "E:\\ArshinWebSite\\InventoryManagement.Domain\\InventoryManagement.Domain.csproj": {
-                "projectPath": "E:\\ArshinWebSite\\InventoryManagement.Domain\\InventoryManagement.Domain.csproj"
+              "D:\\ArshinWebSite\\InventoryManagement.Domain\\InventoryManagement.Domain.csproj": {
+                "projectPath": "D:\\ArshinWebSite\\InventoryManagement.Domain\\InventoryManagement.Domain.csproj"
               }
             }
           }
@@ -616,14 +1327,14 @@
         }
       }
     },
-    "E:\\ArshinWebSite\\InventoryManagement.Domain\\InventoryManagement.Domain.csproj": {
+    "D:\\ArshinWebSite\\InventoryManagement.Domain\\InventoryManagement.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\ArshinWebSite\\InventoryManagement.Domain\\InventoryManagement.Domain.csproj",
+        "projectUniqueName": "D:\\ArshinWebSite\\InventoryManagement.Domain\\InventoryManagement.Domain.csproj",
         "projectName": "InventoryManagement.Domain",
-        "projectPath": "E:\\ArshinWebSite\\InventoryManagement.Domain\\InventoryManagement.Domain.csproj",
+        "projectPath": "D:\\ArshinWebSite\\InventoryManagement.Domain\\InventoryManagement.Domain.csproj",
         "packagesPath": "C:\\Users\\Nafas\\.nuget\\packages\\",
-        "outputPath": "E:\\ArshinWebSite\\InventoryManagement.Domain\\obj\\",
+        "outputPath": "D:\\ArshinWebSite\\InventoryManagement.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -644,11 +1355,11 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "E:\\ArshinWebSite\\0_Framework\\0_Framework.csproj": {
-                "projectPath": "E:\\ArshinWebSite\\0_Framework\\0_Framework.csproj"
+              "D:\\ArshinWebSite\\0_Framework\\0_Framework.csproj": {
+                "projectPath": "D:\\ArshinWebSite\\0_Framework\\0_Framework.csproj"
               },
-              "E:\\ArshinWebSite\\InventoryManagement.Application.Contract\\InventoryManagement.Application.Contract.csproj": {
-                "projectPath": "E:\\ArshinWebSite\\InventoryManagement.Application.Contract\\InventoryManagement.Application.Contract.csproj"
+              "D:\\ArshinWebSite\\InventoryManagement.Application.Contract\\InventoryManagement.Application.Contract.csproj": {
+                "projectPath": "D:\\ArshinWebSite\\InventoryManagement.Application.Contract\\InventoryManagement.Application.Contract.csproj"
               }
             }
           }
@@ -681,14 +1392,14 @@
         }
       }
     },
-    "E:\\ArshinWebSite\\InventoryManagement.Infrastructure.Configuration\\InventoryManagement.Infrastructure.Configuration.csproj": {
+    "D:\\ArshinWebSite\\InventoryManagement.Infrastructure.Configuration\\InventoryManagement.Infrastructure.Configuration.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\ArshinWebSite\\InventoryManagement.Infrastructure.Configuration\\InventoryManagement.Infrastructure.Configuration.csproj",
+        "projectUniqueName": "D:\\ArshinWebSite\\InventoryManagement.Infrastructure.Configuration\\InventoryManagement.Infrastructure.Configuration.csproj",
         "projectName": "InventoryManagement.Infrastructure.Configuration",
-        "projectPath": "E:\\ArshinWebSite\\InventoryManagement.Infrastructure.Configuration\\InventoryManagement.Infrastructure.Configuration.csproj",
+        "projectPath": "D:\\ArshinWebSite\\InventoryManagement.Infrastructure.Configuration\\InventoryManagement.Infrastructure.Configuration.csproj",
         "packagesPath": "C:\\Users\\Nafas\\.nuget\\packages\\",
-        "outputPath": "E:\\ArshinWebSite\\InventoryManagement.Infrastructure.Configuration\\obj\\",
+        "outputPath": "D:\\ArshinWebSite\\InventoryManagement.Infrastructure.Configuration\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -709,14 +1420,14 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "E:\\ArshinWebSite\\InventoryManagement.Application\\InventoryManagement.Application.csproj": {
-                "projectPath": "E:\\ArshinWebSite\\InventoryManagement.Application\\InventoryManagement.Application.csproj"
+              "D:\\ArshinWebSite\\InventoryManagement.Application\\InventoryManagement.Application.csproj": {
+                "projectPath": "D:\\ArshinWebSite\\InventoryManagement.Application\\InventoryManagement.Application.csproj"
               },
-              "E:\\ArshinWebSite\\InventoryManagement.Domain\\InventoryManagement.Domain.csproj": {
-                "projectPath": "E:\\ArshinWebSite\\InventoryManagement.Domain\\InventoryManagement.Domain.csproj"
+              "D:\\ArshinWebSite\\InventoryManagement.Domain\\InventoryManagement.Domain.csproj": {
+                "projectPath": "D:\\ArshinWebSite\\InventoryManagement.Domain\\InventoryManagement.Domain.csproj"
               },
-              "E:\\ArshinWebSite\\InventoryManagement.Infrastructure.EFCore\\InventoryManagement.Infrastructure.EFCore.csproj": {
-                "projectPath": "E:\\ArshinWebSite\\InventoryManagement.Infrastructure.EFCore\\InventoryManagement.Infrastructure.EFCore.csproj"
+              "D:\\ArshinWebSite\\InventoryManagement.Infrastructure.EFCore\\InventoryManagement.Infrastructure.EFCore.csproj": {
+                "projectPath": "D:\\ArshinWebSite\\InventoryManagement.Infrastructure.EFCore\\InventoryManagement.Infrastructure.EFCore.csproj"
               }
             }
           }
@@ -755,14 +1466,14 @@
         }
       }
     },
-    "E:\\ArshinWebSite\\InventoryManagement.Infrastructure.EFCore\\InventoryManagement.Infrastructure.EFCore.csproj": {
+    "D:\\ArshinWebSite\\InventoryManagement.Infrastructure.EFCore\\InventoryManagement.Infrastructure.EFCore.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\ArshinWebSite\\InventoryManagement.Infrastructure.EFCore\\InventoryManagement.Infrastructure.EFCore.csproj",
+        "projectUniqueName": "D:\\ArshinWebSite\\InventoryManagement.Infrastructure.EFCore\\InventoryManagement.Infrastructure.EFCore.csproj",
         "projectName": "InventoryManagement.Infrastructure.EFCore",
-        "projectPath": "E:\\ArshinWebSite\\InventoryManagement.Infrastructure.EFCore\\InventoryManagement.Infrastructure.EFCore.csproj",
+        "projectPath": "D:\\ArshinWebSite\\InventoryManagement.Infrastructure.EFCore\\InventoryManagement.Infrastructure.EFCore.csproj",
         "packagesPath": "C:\\Users\\Nafas\\.nuget\\packages\\",
-        "outputPath": "E:\\ArshinWebSite\\InventoryManagement.Infrastructure.EFCore\\obj\\",
+        "outputPath": "D:\\ArshinWebSite\\InventoryManagement.Infrastructure.EFCore\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -783,11 +1494,11 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "E:\\ArshinWebSite\\InventoryManagement.Domain\\InventoryManagement.Domain.csproj": {
-                "projectPath": "E:\\ArshinWebSite\\InventoryManagement.Domain\\InventoryManagement.Domain.csproj"
+              "D:\\ArshinWebSite\\InventoryManagement.Domain\\InventoryManagement.Domain.csproj": {
+                "projectPath": "D:\\ArshinWebSite\\InventoryManagement.Domain\\InventoryManagement.Domain.csproj"
               },
-              "E:\\ArshinWebSite\\ShopManagement.Infrastructure.EFCore\\ShopManagement.Infrastructure.EFCore.csproj": {
-                "projectPath": "E:\\ArshinWebSite\\ShopManagement.Infrastructure.EFCore\\ShopManagement.Infrastructure.EFCore.csproj"
+              "D:\\ArshinWebSite\\ShopManagement.Infrastructure.EFCore\\ShopManagement.Infrastructure.EFCore.csproj": {
+                "projectPath": "D:\\ArshinWebSite\\ShopManagement.Infrastructure.EFCore\\ShopManagement.Infrastructure.EFCore.csproj"
               }
             }
           }
@@ -836,14 +1547,14 @@
         }
       }
     },
-    "E:\\ArshinWebSite\\ServiceHost\\ServiceHost.csproj": {
+    "D:\\ArshinWebSite\\ServiceHost\\ServiceHost.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\ArshinWebSite\\ServiceHost\\ServiceHost.csproj",
+        "projectUniqueName": "D:\\ArshinWebSite\\ServiceHost\\ServiceHost.csproj",
         "projectName": "ServiceHost",
-        "projectPath": "E:\\ArshinWebSite\\ServiceHost\\ServiceHost.csproj",
+        "projectPath": "D:\\ArshinWebSite\\ServiceHost\\ServiceHost.csproj",
         "packagesPath": "C:\\Users\\Nafas\\.nuget\\packages\\",
-        "outputPath": "E:\\ArshinWebSite\\ServiceHost\\obj\\",
+        "outputPath": "D:\\ArshinWebSite\\ServiceHost\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -864,14 +1575,20 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "E:\\ArshinWebSite\\DiscountManagement.Configuration\\DiscountManagement.Configuration.csproj": {
-                "projectPath": "E:\\ArshinWebSite\\DiscountManagement.Configuration\\DiscountManagement.Configuration.csproj"
+              "D:\\ArshinWebSite\\AccountManagement.Configuration\\AccountManagement.Configuration.csproj": {
+                "projectPath": "D:\\ArshinWebSite\\AccountManagement.Configuration\\AccountManagement.Configuration.csproj"
               },
-              "E:\\ArshinWebSite\\InventoryManagement.Infrastructure.Configuration\\InventoryManagement.Infrastructure.Configuration.csproj": {
-                "projectPath": "E:\\ArshinWebSite\\InventoryManagement.Infrastructure.Configuration\\InventoryManagement.Infrastructure.Configuration.csproj"
+              "D:\\ArshinWebSite\\CommentManagement.Infrastructure.Configuration\\CommentManagement.Infrastructure.Configuration.csproj": {
+                "projectPath": "D:\\ArshinWebSite\\CommentManagement.Infrastructure.Configuration\\CommentManagement.Infrastructure.Configuration.csproj"
               },
-              "E:\\ArshinWebSite\\ShopManagement.Configuration\\ShopManagement.Configuration.csproj": {
-                "projectPath": "E:\\ArshinWebSite\\ShopManagement.Configuration\\ShopManagement.Configuration.csproj"
+              "D:\\ArshinWebSite\\DiscountManagement.Configuration\\DiscountManagement.Configuration.csproj": {
+                "projectPath": "D:\\ArshinWebSite\\DiscountManagement.Configuration\\DiscountManagement.Configuration.csproj"
+              },
+              "D:\\ArshinWebSite\\InventoryManagement.Infrastructure.Configuration\\InventoryManagement.Infrastructure.Configuration.csproj": {
+                "projectPath": "D:\\ArshinWebSite\\InventoryManagement.Infrastructure.Configuration\\InventoryManagement.Infrastructure.Configuration.csproj"
+              },
+              "D:\\ArshinWebSite\\ShopManagement.Configuration\\ShopManagement.Configuration.csproj": {
+                "projectPath": "D:\\ArshinWebSite\\ShopManagement.Configuration\\ShopManagement.Configuration.csproj"
               }
             }
           }
@@ -895,6 +1612,10 @@
             "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",
               "version": "[5.0.2, )"
+            },
+            "Nancy": {
+              "target": "Package",
+              "version": "[2.0.0, )"
             }
           },
           "imports": [
@@ -919,14 +1640,14 @@
         }
       }
     },
-    "E:\\ArshinWebSite\\ShopManagement.Application.Contracts\\ShopManagement.Application.Contracts.csproj": {
+    "D:\\ArshinWebSite\\ShopManagement.Application.Contracts\\ShopManagement.Application.Contracts.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\ArshinWebSite\\ShopManagement.Application.Contracts\\ShopManagement.Application.Contracts.csproj",
+        "projectUniqueName": "D:\\ArshinWebSite\\ShopManagement.Application.Contracts\\ShopManagement.Application.Contracts.csproj",
         "projectName": "ShopManagement.Application.Contracts",
-        "projectPath": "E:\\ArshinWebSite\\ShopManagement.Application.Contracts\\ShopManagement.Application.Contracts.csproj",
+        "projectPath": "D:\\ArshinWebSite\\ShopManagement.Application.Contracts\\ShopManagement.Application.Contracts.csproj",
         "packagesPath": "C:\\Users\\Nafas\\.nuget\\packages\\",
-        "outputPath": "E:\\ArshinWebSite\\ShopManagement.Application.Contracts\\obj\\",
+        "outputPath": "D:\\ArshinWebSite\\ShopManagement.Application.Contracts\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -947,8 +1668,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "E:\\ArshinWebSite\\0_Framework\\0_Framework.csproj": {
-                "projectPath": "E:\\ArshinWebSite\\0_Framework\\0_Framework.csproj"
+              "D:\\ArshinWebSite\\0_Framework\\0_Framework.csproj": {
+                "projectPath": "D:\\ArshinWebSite\\0_Framework\\0_Framework.csproj"
               }
             }
           }
@@ -987,14 +1708,14 @@
         }
       }
     },
-    "E:\\ArshinWebSite\\ShopManagement.Application\\ShopManagement.Application.csproj": {
+    "D:\\ArshinWebSite\\ShopManagement.Application\\ShopManagement.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\ArshinWebSite\\ShopManagement.Application\\ShopManagement.Application.csproj",
+        "projectUniqueName": "D:\\ArshinWebSite\\ShopManagement.Application\\ShopManagement.Application.csproj",
         "projectName": "ShopManagement.Application",
-        "projectPath": "E:\\ArshinWebSite\\ShopManagement.Application\\ShopManagement.Application.csproj",
+        "projectPath": "D:\\ArshinWebSite\\ShopManagement.Application\\ShopManagement.Application.csproj",
         "packagesPath": "C:\\Users\\Nafas\\.nuget\\packages\\",
-        "outputPath": "E:\\ArshinWebSite\\ShopManagement.Application\\obj\\",
+        "outputPath": "D:\\ArshinWebSite\\ShopManagement.Application\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -1015,14 +1736,14 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "E:\\ArshinWebSite\\0_Framework\\0_Framework.csproj": {
-                "projectPath": "E:\\ArshinWebSite\\0_Framework\\0_Framework.csproj"
+              "D:\\ArshinWebSite\\0_Framework\\0_Framework.csproj": {
+                "projectPath": "D:\\ArshinWebSite\\0_Framework\\0_Framework.csproj"
               },
-              "E:\\ArshinWebSite\\ShopManagement.Application.Contracts\\ShopManagement.Application.Contracts.csproj": {
-                "projectPath": "E:\\ArshinWebSite\\ShopManagement.Application.Contracts\\ShopManagement.Application.Contracts.csproj"
+              "D:\\ArshinWebSite\\ShopManagement.Application.Contracts\\ShopManagement.Application.Contracts.csproj": {
+                "projectPath": "D:\\ArshinWebSite\\ShopManagement.Application.Contracts\\ShopManagement.Application.Contracts.csproj"
               },
-              "E:\\ArshinWebSite\\ShopManagement.Domain\\ShopManagement.Domain.csproj": {
-                "projectPath": "E:\\ArshinWebSite\\ShopManagement.Domain\\ShopManagement.Domain.csproj"
+              "D:\\ArshinWebSite\\ShopManagement.Domain\\ShopManagement.Domain.csproj": {
+                "projectPath": "D:\\ArshinWebSite\\ShopManagement.Domain\\ShopManagement.Domain.csproj"
               }
             }
           }
@@ -1055,14 +1776,14 @@
         }
       }
     },
-    "E:\\ArshinWebSite\\ShopManagement.Configuration\\ShopManagement.Configuration.csproj": {
+    "D:\\ArshinWebSite\\ShopManagement.Configuration\\ShopManagement.Configuration.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\ArshinWebSite\\ShopManagement.Configuration\\ShopManagement.Configuration.csproj",
+        "projectUniqueName": "D:\\ArshinWebSite\\ShopManagement.Configuration\\ShopManagement.Configuration.csproj",
         "projectName": "ShopManagement.Configuration",
-        "projectPath": "E:\\ArshinWebSite\\ShopManagement.Configuration\\ShopManagement.Configuration.csproj",
+        "projectPath": "D:\\ArshinWebSite\\ShopManagement.Configuration\\ShopManagement.Configuration.csproj",
         "packagesPath": "C:\\Users\\Nafas\\.nuget\\packages\\",
-        "outputPath": "E:\\ArshinWebSite\\ShopManagement.Configuration\\obj\\",
+        "outputPath": "D:\\ArshinWebSite\\ShopManagement.Configuration\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -1083,17 +1804,17 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "E:\\ArshinWebSite\\01_ArshinQuery\\01_ArshinQuery.csproj": {
-                "projectPath": "E:\\ArshinWebSite\\01_ArshinQuery\\01_ArshinQuery.csproj"
+              "D:\\ArshinWebSite\\01_ArshinQuery\\01_ArshinQuery.csproj": {
+                "projectPath": "D:\\ArshinWebSite\\01_ArshinQuery\\01_ArshinQuery.csproj"
               },
-              "E:\\ArshinWebSite\\ShopManagement.Application.Contracts\\ShopManagement.Application.Contracts.csproj": {
-                "projectPath": "E:\\ArshinWebSite\\ShopManagement.Application.Contracts\\ShopManagement.Application.Contracts.csproj"
+              "D:\\ArshinWebSite\\ShopManagement.Application.Contracts\\ShopManagement.Application.Contracts.csproj": {
+                "projectPath": "D:\\ArshinWebSite\\ShopManagement.Application.Contracts\\ShopManagement.Application.Contracts.csproj"
               },
-              "E:\\ArshinWebSite\\ShopManagement.Application\\ShopManagement.Application.csproj": {
-                "projectPath": "E:\\ArshinWebSite\\ShopManagement.Application\\ShopManagement.Application.csproj"
+              "D:\\ArshinWebSite\\ShopManagement.Application\\ShopManagement.Application.csproj": {
+                "projectPath": "D:\\ArshinWebSite\\ShopManagement.Application\\ShopManagement.Application.csproj"
               },
-              "E:\\ArshinWebSite\\ShopManagement.Infrastructure.EFCore\\ShopManagement.Infrastructure.EFCore.csproj": {
-                "projectPath": "E:\\ArshinWebSite\\ShopManagement.Infrastructure.EFCore\\ShopManagement.Infrastructure.EFCore.csproj"
+              "D:\\ArshinWebSite\\ShopManagement.Infrastructure.EFCore\\ShopManagement.Infrastructure.EFCore.csproj": {
+                "projectPath": "D:\\ArshinWebSite\\ShopManagement.Infrastructure.EFCore\\ShopManagement.Infrastructure.EFCore.csproj"
               }
             }
           }
@@ -1132,14 +1853,14 @@
         }
       }
     },
-    "E:\\ArshinWebSite\\ShopManagement.Domain\\ShopManagement.Domain.csproj": {
+    "D:\\ArshinWebSite\\ShopManagement.Domain\\ShopManagement.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\ArshinWebSite\\ShopManagement.Domain\\ShopManagement.Domain.csproj",
+        "projectUniqueName": "D:\\ArshinWebSite\\ShopManagement.Domain\\ShopManagement.Domain.csproj",
         "projectName": "ShopManagement.Domain",
-        "projectPath": "E:\\ArshinWebSite\\ShopManagement.Domain\\ShopManagement.Domain.csproj",
+        "projectPath": "D:\\ArshinWebSite\\ShopManagement.Domain\\ShopManagement.Domain.csproj",
         "packagesPath": "C:\\Users\\Nafas\\.nuget\\packages\\",
-        "outputPath": "E:\\ArshinWebSite\\ShopManagement.Domain\\obj\\",
+        "outputPath": "D:\\ArshinWebSite\\ShopManagement.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -1160,11 +1881,11 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "E:\\ArshinWebSite\\0_Framework\\0_Framework.csproj": {
-                "projectPath": "E:\\ArshinWebSite\\0_Framework\\0_Framework.csproj"
+              "D:\\ArshinWebSite\\0_Framework\\0_Framework.csproj": {
+                "projectPath": "D:\\ArshinWebSite\\0_Framework\\0_Framework.csproj"
               },
-              "E:\\ArshinWebSite\\ShopManagement.Application.Contracts\\ShopManagement.Application.Contracts.csproj": {
-                "projectPath": "E:\\ArshinWebSite\\ShopManagement.Application.Contracts\\ShopManagement.Application.Contracts.csproj"
+              "D:\\ArshinWebSite\\ShopManagement.Application.Contracts\\ShopManagement.Application.Contracts.csproj": {
+                "projectPath": "D:\\ArshinWebSite\\ShopManagement.Application.Contracts\\ShopManagement.Application.Contracts.csproj"
               }
             }
           }
@@ -1197,14 +1918,14 @@
         }
       }
     },
-    "E:\\ArshinWebSite\\ShopManagement.Infrastructure.EFCore\\ShopManagement.Infrastructure.EFCore.csproj": {
+    "D:\\ArshinWebSite\\ShopManagement.Infrastructure.EFCore\\ShopManagement.Infrastructure.EFCore.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\ArshinWebSite\\ShopManagement.Infrastructure.EFCore\\ShopManagement.Infrastructure.EFCore.csproj",
+        "projectUniqueName": "D:\\ArshinWebSite\\ShopManagement.Infrastructure.EFCore\\ShopManagement.Infrastructure.EFCore.csproj",
         "projectName": "ShopManagement.Infrastructure.EFCore",
-        "projectPath": "E:\\ArshinWebSite\\ShopManagement.Infrastructure.EFCore\\ShopManagement.Infrastructure.EFCore.csproj",
+        "projectPath": "D:\\ArshinWebSite\\ShopManagement.Infrastructure.EFCore\\ShopManagement.Infrastructure.EFCore.csproj",
         "packagesPath": "C:\\Users\\Nafas\\.nuget\\packages\\",
-        "outputPath": "E:\\ArshinWebSite\\ShopManagement.Infrastructure.EFCore\\obj\\",
+        "outputPath": "D:\\ArshinWebSite\\ShopManagement.Infrastructure.EFCore\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -1225,11 +1946,11 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "E:\\ArshinWebSite\\InventoryManagement.Domain\\InventoryManagement.Domain.csproj": {
-                "projectPath": "E:\\ArshinWebSite\\InventoryManagement.Domain\\InventoryManagement.Domain.csproj"
+              "D:\\ArshinWebSite\\InventoryManagement.Domain\\InventoryManagement.Domain.csproj": {
+                "projectPath": "D:\\ArshinWebSite\\InventoryManagement.Domain\\InventoryManagement.Domain.csproj"
               },
-              "E:\\ArshinWebSite\\ShopManagement.Domain\\ShopManagement.Domain.csproj": {
-                "projectPath": "E:\\ArshinWebSite\\ShopManagement.Domain\\ShopManagement.Domain.csproj"
+              "D:\\ArshinWebSite\\ShopManagement.Domain\\ShopManagement.Domain.csproj": {
+                "projectPath": "D:\\ArshinWebSite\\ShopManagement.Domain\\ShopManagement.Domain.csproj"
               }
             }
           }

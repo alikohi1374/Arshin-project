@@ -1,5 +1,4 @@
 ﻿using System.Collections.Generic;
-using System.Globalization;
 using System.Linq;
 using _0_Framework.Application;
 using _0_Framework.Infrastructure;
@@ -29,6 +28,11 @@ namespace ShopManagement.Infrastructure.EFCore.Repository
 
         }
 
+        public Product GetWithCategory(long id)
+        {
+            return _context.Product.Include(x => x.Category).FirstOrDefault(x => x.Id == id);
+        }
+
         public EditProduct GetDetails(long id)
         {
             return _context.Product.Select(x => new EditProduct
@@ -42,7 +46,6 @@ namespace ShopManagement.Infrastructure.EFCore.Repository
                 Keywords = x.Keywords,
                 PictureAlt = x.PictureAlt,
                 MetaDescription = x.MetaDescription,
-                Picture = x.Picture,
                 PictureTitle = x.PictureTitle,
                 Description = x.Description,
 
