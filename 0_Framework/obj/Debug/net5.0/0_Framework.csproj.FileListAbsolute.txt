@@ -10,3 +10,15 @@ E:\ArshinWebSite\0_Framework\obj\Debug\net5.0\0_Framework.csproj.CoreCompileInpu
 E:\ArshinWebSite\0_Framework\obj\Debug\net5.0\0_Framework.dll
 E:\ArshinWebSite\0_Framework\obj\Debug\net5.0\ref\0_Framework.dll
 E:\ArshinWebSite\0_Framework\obj\Debug\net5.0\0_Framework.pdb
+D:\ArshinWebSite\0_Framework\bin\Debug\net5.0\0_Framework.deps.json
+D:\ArshinWebSite\0_Framework\bin\Debug\net5.0\0_Framework.dll
+D:\ArshinWebSite\0_Framework\bin\Debug\net5.0\ref\0_Framework.dll
+D:\ArshinWebSite\0_Framework\bin\Debug\net5.0\0_Framework.pdb
+D:\ArshinWebSite\0_Framework\obj\Debug\net5.0\0_Framework.csproj.AssemblyReference.cache
+D:\ArshinWebSite\0_Framework\obj\Debug\net5.0\0_Framework.GeneratedMSBuildEditorConfig.editorconfig
+D:\ArshinWebSite\0_Framework\obj\Debug\net5.0\0_Framework.AssemblyInfoInputs.cache
+D:\ArshinWebSite\0_Framework\obj\Debug\net5.0\0_Framework.AssemblyInfo.cs
+D:\ArshinWebSite\0_Framework\obj\Debug\net5.0\0_Framework.csproj.CoreCompileInputs.cache
+D:\ArshinWebSite\0_Framework\obj\Debug\net5.0\0_Framework.dll
+D:\ArshinWebSite\0_Framework\obj\Debug\net5.0\ref\0_Framework.dll
+D:\ArshinWebSite\0_Framework\obj\Debug\net5.0\0_Framework.pdb

@@ -72,11 +72,11 @@ namespace ServiceHost
                     options.Conventions.AuthorizeAreaFolder("Admin", "/Shop", "Shop");
                     options.Conventions.AuthorizeAreaFolder("Admin", "/Discounts", "Discount");
                     options.Conventions.AuthorizeAreaFolder("Admin", "/Accounts", "Account");
-                })
-                .AddApplicationPart(typeof(ProductController).Assembly)
-                .AddApplicationPart(typeof(InventoryController).Assembly)
-                .AddNewtonsoftJson();
-        }
+                });
+              //  .AddApplicationPart(typeof(ProductController).Assembly)
+               // .AddApplicationPart(typeof(InventoryController).Assembly)
+              //  .AddNewtonsoftJson();
+        
 
         services.AddTransient<IFileUploader, FileUploader>();
             services.AddTransient<IAuthHelper, AuthHelper>();

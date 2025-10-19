@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using _01_ArshinQuery.Contracts;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Nancy.Json;
@@ -13,6 +14,13 @@ namespace ServiceHost.Pages
     {
         public Cart Cart;
         public const string CookieName = "cart-items";
+        private readonly ICartCalculatorService _cartCalculatorService;
+
+        public CheckoutModel(ICartCalculatorService cartCalculatorService)
+        {
+            _cartCalculatorService = cartCalculatorService;
+        }
+
         public void OnGet()
         {
             var serializer = new JavaScriptSerializer();
@@ -21,7 +29,7 @@ namespace ServiceHost.Pages
             foreach (var item in cartItems)
                 item.CalculateTotalItemPrice();
 
-          //  Cart = _cartCalculatorService.ComputeCart(cartItems);
+            Cart = _cartCalculatorService.ComputeCart(cartItems);
            // _cartService.Set(Cart);
         }
     }

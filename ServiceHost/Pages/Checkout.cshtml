@@ -1,4 +1,291 @@
 ﻿@page
+@using System.Globalization
+@using _0_Framework.Application
 @model ServiceHost.Pages.CheckoutModel
 @{
 }
+<main class="main">
+    <div class="page-header breadcrumb-wrap">
+        <div class="container">
+            <div class="breadcrumb">
+                <a asp-page="/Index" rel="nofollow">صفحه اصلی<i class="fi-rs-home mr-5"></i></a>
+                <span></span> بررسی مجدد
+            </div>
+        </div>
+    </div>
+<div class="row">
+            <div class="col-lg-12">
+                <div class="border p-40 cart-totals ml-30 mb-50">
+                    <div class="d-flex align-items-end justify-content-between mb-30">
+                        <h4>خرید شما</h4>
+                        <h6 class="text-muted">مجموع</h6>
+                    </div>
+                    <div class="divider-2 mb-30"></div>
+                    <div class="table-responsive shopping-summery">
+                        <table class="table table-wishlist">
+                            <thead>
+                                <tr class="main-heading">
+                                    <th class="custome-checkbox start pl-30">
+                                        <input class="form-check-input" type="checkbox" name="checkbox" id="exampleCheckbox11" value="">
+                                        <label class="form-check-label" for="exampleCheckbox11"></label>
+                                    </th>
+                                    <th scope="col" colspan="2">محصولات</th>
+                                    <th scope="col">قیمت</th>
+                                    <th scope="col">متراژ</th>
+                                    <th scope="col">مبلغ کل بدون تخفیف</th>
+                                    <th scope="col">درصد تخفیف</th>
+                                    <th scope="col">مبلغ کل تخفیف</th>
+                                    <th scope="col">مبلغ پس از تخفیف</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach (var item in Model.Cart.Items)
+                                {
+                                    <tr class="pt-30">
+                                        <td class="custome-checkbox pl-30">
+                                            <input class="form-check-input" type="checkbox" name="checkbox" id="exampleCheckbox1" value="">
+                                            <label class="form-check-label" for="exampleCheckbox1"></label>
+                                        </td>
+                                        <td class="image product-thumbnail pt-40"><img src="~/ProductPictures/@item.Picture"></td>
+                                        <td class="product-des product-name">
+                                            <h6 class="mb-5"><a class="product-name mb-10 text-heading" >@item.Name</a></h6>
+
+                                        </td>
+                                        <td class="price" data-title="Price">
+                                            <span class="text-body">@item.UnitPrice.ToMoney()</span>
+                                        </td>
+                                        <td data-title="Stock">
+                                            <div class="d-inline-flex align-items-center justify-content-center">
+                                                <span>@item.Count.ToString(CultureInfo.InvariantCulture)</span>
+                                                <span class="mr-2">متر مربع</span>
+
+                                            </div>
+                                        </td>
+                                        <td class="price" data-title="Price">
+                                            <span>@item.TotalItemPrice.ToMoney()</span>
+                                        </td>
+                                        <td class="price" data-title="Price">
+                                            <span>@item.DiscountRate %</span>
+                                        </td>
+                                        <td class="price" data-title="Price">
+                                            <span>@item.DiscountAmount.ToMoney() تومان</span>
+                                        </td>
+                                        <td class="price" data-title="Price">
+                                            <span>@item.ItemPayAmount.ToMoney() تومان</span>
+                                        </td>
+                                    </tr>
+                                }
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="payment ml-30">
+                    <h4 class="mb-30">پرداخت</h4>
+                    <div class="payment_option">
+                        <div class="custome-radio">
+                            <input class="form-check-input" required="" type="radio" name="payment_option" id="exampleRadios3" checked="">
+                            <label class="form-check-label" for="exampleRadios3" data-bs-toggle="collapse" data-target="#bankTranfer" aria-controls="bankTranfer">فیش ثبتی</label>
+                        </div>
+                        <div class="custome-radio">
+                            <input class="form-check-input" required="" type="radio" name="payment_option" id="exampleRadios4" checked="">
+                            <label class="form-check-label" for="exampleRadios4" data-bs-toggle="collapse" data-target="#checkPayment" aria-controls="checkPayment">تحویل درب محل</label>
+                        </div>
+                        <div class="custome-radio">
+                            <input class="form-check-input" required="" type="radio" name="payment_option" id="exampleRadios5" checked="">
+                            <label class="form-check-label" for="exampleRadios5" data-bs-toggle="collapse" data-target="#paypal" aria-controls="paypal">پرداخت آنلاین</label>
+                        </div>
+                    </div>
+                    <div class="payment-logo d-flex">
+                        <img class="mr-15" src="assets/imgs/theme/icons/payment-paypal.svg" alt="">
+                        <img class="mr-15" src="assets/imgs/theme/icons/payment-visa.svg" alt="">
+                        <img class="mr-15" src="assets/imgs/theme/icons/payment-master.svg" alt="">
+                        <img src="assets/imgs/theme/icons/payment-zapper.svg" alt="">
+                    </div>
+                    <a href="#" class="btn btn-fill-out btn-block mt-30">ثبت سفارش<i class="fi-rs-sign-out ml-15"></i></a>
+                </div>
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="col-lg-7">
+                <div class="row mb-50">
+                    <div class="col-lg-6 mb-sm-15 mb-lg-0 mb-md-3">
+                        <div class="toggle_info">
+                            <span><i class="fi-rs-user mr-10"></i><span class="text-muted font-lg">اکانت دارید ؟</span> <a href="#loginform" data-bs-toggle="collapse" class="collapsed font-lg" aria-expanded="false">وارد شوید</a></span>
+                        </div>
+                        <div class="panel-collapse collapse login_form" id="loginform">
+                            <div class="panel-body">
+                                <p class="mb-30 font-sm">اگر قبلا از ما خرید کرده اید، لطفا مشخصات خود را در زیر وارد کنید. اگر مشتری جدید هستید، به بخش ثبت نام مراجعه کنید</p>
+                                <form method="post">
+                                    <div class="form-group">
+                                        <input type="text" name="email" placeholder="ایمیل یا نام کاربری">
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="password" name="password" placeholder="رمز عبور">
+                                    </div>
+                                    <div class="login_footer form-group">
+                                        <div class="chek-form">
+                                            <div class="custome-checkbox">
+                                                <input class="form-check-input" type="checkbox" name="checkbox" id="remember" value="">
+                                                <label class="form-check-label" for="remember"><span>به خاطر بسپار</span></label>
+                                            </div>
+                                        </div>
+                                        <a href="#">فراموشی رمز عبور</a>
+                                    </div>
+                                    <div class="form-group">
+                                        <button class="btn btn-md" name="login">ورود</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <form method="post" class="apply-coupon">
+                            <input type="text" placeholder="کد تخفیف را وارد کنید">
+                            <button class="btn  btn-md" name="login">تایید</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="row">
+                    <h4 class="mb-30">جزئیات صورتحساب</h4>
+                    <form method="post">
+                        <div class="row">
+                            <div class="form-group col-lg-6">
+                                <input type="text" required="" name="fname" placeholder="نام *">
+                            </div>
+                            <div class="form-group col-lg-6">
+                                <input type="text" required="" name="lname" placeholder="نام خانوادگی *">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-group col-lg-6">
+                                <input type="text" name="billing_address" required="" placeholder="آدرس *">
+                            </div>
+                            <div class="form-group col-lg-6">
+                                <input type="text" name="billing_address2" required="" placeholder="آدرس 2">
+                            </div>
+                        </div>
+                        <div class="row shipping_calculator">
+                            <div class="form-group col-lg-6">
+                                <div class="custom_select">
+                                    <select class="form-control select-active">
+                                        <option value="">تهران</option>
+                                        <option value="AX">کرج</option>
+                                        <option value="AF">رشت</option>
+                                        <option value="AL">زنجان</option>
+                                        <option value="DZ">گیلان</option>
+                                        <option value="AD">گرگان</option>
+                                        <option value="AO">زاهدان</option>
+                                        <option value="AI">اهواز</option>
+                                        <option value="AQ">مشهد</option>
+                                        <option value="AG">اردبیل</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group col-lg-6">
+                                <input required="" type="text" name="city" placeholder="شهر *">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-group col-lg-6">
+                                <input required="" type="text" name="zipcode" placeholder="کد پستی *">
+                            </div>
+                            <div class="form-group col-lg-6">
+                                <input required="" type="text" name="phone" placeholder="تلفن *">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-group col-lg-6">
+                                <input required="" type="text" name="cname" placeholder="کمپانی">
+                            </div>
+                            <div class="form-group col-lg-6">
+                                <input required="" type="text" name="email" placeholder="آدرس ایمیل *">
+                            </div>
+                        </div>
+                        <div class="form-group mb-30">
+                            <textarea rows="5" placeholder="جزئیات بیشتر"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <div class="checkbox">
+                                <div class="custome-checkbox">
+                                    <input class="form-check-input" type="checkbox" name="checkbox" id="createaccount">
+                                    <label class="form-check-label label_info" data-bs-toggle="collapse" href="#collapsePassword" data-target="#collapsePassword" aria-controls="collapsePassword" for="createaccount"><span>ساخت اکانت</span></label>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="collapsePassword" class="form-group create-account collapse in">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <input required="" type="password" placeholder="رمزعبور" name="رمز عبور">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ship_detail">
+                            <div class="form-group">
+                                <div class="chek-form">
+                                    <div class="custome-checkbox">
+                                        <input class="form-check-input" type="checkbox" name="checkbox" id="differentaddress">
+                                        <label class="form-check-label label_info" data-bs-toggle="collapse" data-target="#collapseAddress" href="#collapseAddress" aria-controls="collapseAddress" for="differentaddress"><span>آدرس جدید</span></label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="collapseAddress" class="different_address collapse in">
+                                <div class="row">
+                                    <div class="form-group col-lg-6">
+                                        <input type="text" required="" name="fname" placeholder="نام *">
+                                    </div>
+                                    <div class="form-group col-lg-6">
+                                        <input type="text" required="" name="lname" placeholder="نام خانوادگی *">
+                                    </div>
+                                </div>
+                                <div class="row shipping_calculator">
+                                    <div class="form-group col-lg-6">
+                                        <input required="" type="text" name="cname" placeholder="کمپانی">
+                                    </div>
+                                    <div class="form-group col-lg-6">
+                                        <div class="custom_select w-100">
+                                            <select class="form-control select-active">
+                                                <option value="">تهران</option>
+                                                <option value="AX">کرج</option>
+                                                <option value="AF">رشت</option>
+                                                <option value="AL">زنجان</option>
+                                                <option value="DZ">گیلان</option>
+                                                <option value="AD">گرگان</option>
+                                                <option value="AO">زاهدان</option>
+                                                <option value="AI">اهواز</option>
+                                                <option value="AQ">مشهد</option>
+                                                <option value="AG">اردبیل</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="form-group col-lg-6">
+                                        <input type="text" name="billing_address" required="" placeholder="آدرس *">
+                                    </div>
+                                    <div class="form-group col-lg-6">
+                                        <input type="text" name="billing_address2" required="" placeholder="آدرس 2">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="form-group col-lg-6">
+                                        <input required="" type="text" name="state" placeholder="شهر">
+                                    </div>
+                                    <div class="form-group col-lg-6">
+                                        <input required="" type="text" name="city" placeholder="استان *">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="form-group col-lg-6">
+                                        <input required="" type="text" name="zipcode" placeholder="کد پستی *">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</main>

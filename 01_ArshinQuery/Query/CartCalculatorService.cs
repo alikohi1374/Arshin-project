@@ -34,7 +34,7 @@ namespace _01_ArshinQuery.Query
                 .ToList();
             var currentAccountRole = _authHelper.CurrentAccountRole();
 
-         /*  foreach (var cartItem in cartItems)
+           foreach (var cartItem in cartItems)
             {
                 if (currentAccountRole == Roles.ColleagueUser)
                 {
@@ -53,7 +53,7 @@ namespace _01_ArshinQuery.Query
                 cartItem.ItemPayAmount = cartItem.TotalItemPrice - cartItem.DiscountAmount;
                 cart.Add(cartItem);
             }
-         */
+         
             return cart;
         }
     }

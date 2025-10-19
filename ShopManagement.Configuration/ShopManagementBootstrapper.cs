@@ -1,4 +1,6 @@
-﻿using _01_ArshinQuery.Contracts.Product;
+﻿using _0_Framework.Infrastructure;
+using _01_ArshinQuery.Contracts;
+using _01_ArshinQuery.Contracts.Product;
 using Microsoft.Extensions.DependencyInjection;
 using ShopManagement.Application;
 using ShopManagement.Application.Contracts.ProductCategory;
@@ -14,6 +16,7 @@ using ShopManagement.Infrastructure.EFCore;
 using ShopManagement.Infrastructure.EFCore.Repository;
 using _01_ArshinQuery.Contracts.ProductCategory;
 using _01_ArshinQuery.Query;
+using ShopManagement.Configuration.Permissions;
 
 namespace ShopManagement.Configuration
 {
@@ -29,12 +32,13 @@ namespace ShopManagement.Configuration
             services.AddTransient<IProductPictureRepository, ProductPictureRepository>();
             services.AddTransient<ISlideApplication, SlideApplication>();
             services.AddTransient<ISlideRepository,SlideRepository>();
+            services.AddTransient<IPermissionExposer, ShopPermissionExposer>();
 
 
 
             services.AddTransient<IProductCategoryQuery, ProductCategoryQuery>();
             services.AddTransient<IProductQuery, ProductQuery>();
-
+            services.AddTransient<ICartCalculatorService, CartCalculatorService>();
             services.AddDbContext<ShopContext>(x => x.UseSqlServer(ConnectionString));
         }
 
