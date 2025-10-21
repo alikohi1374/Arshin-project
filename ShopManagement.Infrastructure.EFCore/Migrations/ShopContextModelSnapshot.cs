@@ -85,6 +85,61 @@ namespace ShopManagement.Infrastructure.EFCore.Migrations
                     b.ToTable("Products");
                 });
 
+            modelBuilder.Entity("ShopManagement.Domain.ProductAttributeAgg.ProductAttributeDefinition", b =>
+                {
+                    b.Property<long>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("bigint")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<string>("AllowedValuesJson")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("DataType")
+                        .IsRequired()
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)");
+
+                    b.Property<bool>("IsRequired")
+                        .HasColumnType("bit");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasMaxLength(200)
+                        .HasColumnType("nvarchar(200)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("ProductAttributeDefinitions");
+                });
+
+            modelBuilder.Entity("ShopManagement.Domain.ProductAttributeAgg.ProductAttributeValue", b =>
+                {
+                    b.Property<long>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("bigint")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<long>("AttributeDefinitionId")
+                        .HasColumnType("bigint");
+
+                    b.Property<DateTime>("CreatedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<long>("ProductId")
+                        .HasColumnType("bigint");
+
+                    b.Property<string>("Value")
+                        .HasMaxLength(1000)
+                        .HasColumnType("nvarchar(1000)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("AttributeDefinitionId");
+
+                    b.ToTable("ProductAttributeValues");
+                });
+
             modelBuilder.Entity("ShopManagement.Domain.ProductCategoryAgg.ProductCategory", b =>
                 {
                     b.Property<long>("Id")
@@ -236,6 +291,17 @@ namespace ShopManagement.Infrastructure.EFCore.Migrations
                     b.Navigation("Category");
                 });
 
+            modelBuilder.Entity("ShopManagement.Domain.ProductAttributeAgg.ProductAttributeValue", b =>
+                {
+                    b.HasOne("ShopManagement.Domain.ProductAttributeAgg.ProductAttributeDefinition", "AttributeDefinition")
+                        .WithMany("AttributeValues")
+                        .HasForeignKey("AttributeDefinitionId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("AttributeDefinition");
+                });
+
             modelBuilder.Entity("ShopManagement.Domain.ProductPictureAgg.ProductPicture", b =>
                 {
                     b.HasOne("ShopManagement.Domain.ProductAgg.Product", "Product")
@@ -250,6 +316,11 @@ namespace ShopManagement.Infrastructure.EFCore.Migrations
             modelBuilder.Entity("ShopManagement.Domain.ProductAgg.Product", b =>
                 {
                     b.Navigation("ProductPictures");
+                });
+
+            modelBuilder.Entity("ShopManagement.Domain.ProductAttributeAgg.ProductAttributeDefinition", b =>
+                {
+                    b.Navigation("AttributeValues");
                 });
 
             modelBuilder.Entity("ShopManagement.Domain.ProductCategoryAgg.ProductCategory", b =>

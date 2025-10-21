@@ -552,3 +552,6 @@ D:\ArshinWebSite\ServiceHost\obj\Debug\net5.0\ServiceHost.pdb
 D:\ArshinWebSite\ServiceHost\obj\Debug\net5.0\ServiceHost.genruntimeconfig.cache
 D:\ArshinWebSite\ServiceHost\obj\Debug\net5.0\Razor\Pages\Checkout.cshtml.g.cs
 D:\ArshinWebSite\ServiceHost\obj\Debug\net5.0\Razor\Pages\Register.cshtml.g.cs
+D:\ArshinWebSite\ServiceHost\obj\Debug\net5.0\Razor\Areas\Admin\Pages\Shop\ProductAttribute\Create.cshtml.g.cs
+D:\ArshinWebSite\ServiceHost\obj\Debug\net5.0\Razor\Areas\Admin\Pages\Shop\ProductAttribute\Edit.cshtml.g.cs
+D:\ArshinWebSite\ServiceHost\obj\Debug\net5.0\Razor\Areas\Admin\Pages\Shop\ProductAttribute\Index.cshtml.g.cs

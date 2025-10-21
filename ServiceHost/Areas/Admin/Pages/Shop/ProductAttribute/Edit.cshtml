@@ -1,0 +1,38 @@
+﻿@page "{id:long}"
+@model ServiceHost.Areas.Admin.Pages.Shop.ProductAttribute.EditModel
+@{
+    ViewData["Title"] = "ویرایش ویژگی";
+}
+<h2>ویرایش ویژگی</h2>
+
+<form method="post">
+    <input type="hidden" asp-for="Attribute.Id" />
+
+    <div class="form-group">
+        <label>نام ویژگی</label>
+        <input asp-for="Attribute.Name" class="form-control" />
+    </div>
+
+    <div class="form-group">
+        <label>نوع داده</label>
+        <select asp-for="Attribute.DataType" class="form-control">
+            <option value="String">متن</option>
+            <option value="Number">عدد</option>
+            <option value="Boolean">بله/خیر</option>
+            <option value="Enum">انتخاب از لیست</option>
+        </select>
+    </div>
+
+    <div class="form-group">
+        <label>آیا اجباری است؟</label>
+        <input type="checkbox" asp-for="Attribute.IsRequired" />
+    </div>
+
+    <div class="form-group">
+        <label>مقادیر مجاز (برای نوع Enum - JSON)</label>
+        <input asp-for="Attribute.AllowedValuesJson" class="form-control" />
+    </div>
+
+    <button type="submit" class="btn btn-success">ذخیره تغییرات</button>
+    <a asp-page="./Index" class="btn btn-secondary">بازگشت</a>
+</form>

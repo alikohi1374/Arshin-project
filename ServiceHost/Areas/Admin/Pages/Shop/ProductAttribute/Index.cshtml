@@ -1,0 +1,33 @@
+﻿@page
+@model ServiceHost.Areas.Admin.Pages.Shop.ProductAttribute.IndexModel
+@{
+}
+<h2>لیست ویژگی‌ها</h2>
+
+<a class="btn btn-primary mb-3" asp-page="./Create">افزودن ویژگی جدید</a>
+
+<table class="table table-bordered table-striped">
+    <thead>
+    <tr>
+        <th>نام</th>
+        <th>نوع داده</th>
+        <th>اجباری؟</th>
+        <th>مقادیر مجاز</th>
+        <th>عملیات</th>
+    </tr>
+    </thead>
+    <tbody>
+    @foreach (var item in Model.Attributes)
+    {
+        <tr>
+            <td>@item.Name</td>
+            <td>@item.DataType</td>
+            <td>@(item.IsRequired ? "بله" : "خیر")</td>
+            <td>@item.AllowedValuesJson</td>
+            <td>
+                <a asp-page="./Edit" asp-route-id="@item.Id" class="btn btn-sm btn-warning">ویرایش</a>
+            </td>
+        </tr>
+    }
+    </tbody>
+</table>

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using _0_Framework.Application;
 using Microsoft.AspNetCore.Http;
+using ShopManagement.Application.Contracts.DTOs;
 using ShopManagement.Application.Contracts.ProductCategory;
 
 namespace ShopManagement.Application.Contracts.Product
@@ -30,6 +31,9 @@ namespace ShopManagement.Application.Contracts.Product
         [Range(0,100000,ErrorMessage = ValidationMessages.IsRequired)]
         public long CategoryId { get;  set; }
         public  List<ProductCategoryViewModel> Categories { get; set; }
+      
+        public List<AttributeValueDto> AttributeValues { get; set; } = new();
+        public List<AttributeDefinitionDto> AvailableAttributes { get; set; } = new();
     }
 
 

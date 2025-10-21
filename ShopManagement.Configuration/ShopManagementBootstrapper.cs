@@ -17,6 +17,7 @@ using ShopManagement.Infrastructure.EFCore.Repository;
 using _01_ArshinQuery.Contracts.ProductCategory;
 using _01_ArshinQuery.Query;
 using ShopManagement.Configuration.Permissions;
+using ShopManagement.Domain.ProductAttributeAgg;
 
 namespace ShopManagement.Configuration
 {
@@ -39,6 +40,9 @@ namespace ShopManagement.Configuration
             services.AddTransient<IProductCategoryQuery, ProductCategoryQuery>();
             services.AddTransient<IProductQuery, ProductQuery>();
             services.AddTransient<ICartCalculatorService, CartCalculatorService>();
+            services.AddScoped<IProductAttributeRepository, ProductAttributeRepository>();
+            services.AddScoped<IProductAttributeApplication, ProductAttributeApplication>();
+
             services.AddDbContext<ShopContext>(x => x.UseSqlServer(ConnectionString));
         }
 

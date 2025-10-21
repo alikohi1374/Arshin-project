@@ -1,4 +1,5 @@
-﻿@model ShopManagement.Application.Contracts.Product.EditProduct
+﻿@using System.Text.Json
+@model ShopManagement.Application.Contracts.Product.EditProduct
 @{
 }
 
@@ -42,6 +43,76 @@
                 </div>
             </div>
         </div>
+        <hr />
+        <h5>ویژگی‌های محصول</h5>
+        <div id="product-attributes">
+            @if (Model.AvailableAttributes != null && Model.AvailableAttributes.Any())
+            {
+                @for (int i = 0; i < Model.AvailableAttributes.Count; i++)
+                {
+                    var attr = Model.AvailableAttributes[i];
+                    var existingValue = Model.AttributeValues?.FirstOrDefault(v => v.AttributeDefinitionId == attr.Id)?.Value;
+
+                    <div class="form-group mb-3">
+                        <label class="control-label">@attr.Name</label>
+
+                        @{
+                            List<string> values = null;
+                            if (!string.IsNullOrWhiteSpace(attr.AllowedValuesJson))
+                            {
+                                try
+                                {
+                                    values = JsonSerializer.Deserialize<List<string>>(attr.AllowedValuesJson);
+                                }
+                                catch
+                                {
+                                    var s = attr.AllowedValuesJson.Trim('[', ']', ' ', '"', '\'');
+                                    values = s.Split(new[] { ',', ';' }, StringSplitOptions.RemoveEmptyEntries)
+                                              .Select(x => x.Trim().Trim('"', '\'')).ToList();
+                                }
+                            }
+
+                            if (values != null && values.Any())
+                            {
+                                <select class="form-control" name="AttributeValues[@i].Value">
+                                    <option value="">انتخاب کنید...</option>
+                                    @foreach (var v in values)
+                                    {
+                                        <option value="@v" selected="@(v == existingValue ? "selected" : null)">@v</option>
+                                    }
+                                </select>
+                            }
+                            else
+                            {
+                                switch ((attr.DataType ?? "string").ToLower())
+                                {
+                                    case "number":
+                                        <input type="number" class="form-control" name="AttributeValues[@i].Value" value="@existingValue" />
+                                        break;
+                                    case "boolean":
+                                        <select class="form-control" name="AttributeValues[@i].Value">
+                                            <option value="">انتخاب کنید...</option>
+                                            <option value="true" selected="@(existingValue == "true" ? "selected" : null)">بله</option>
+                                            <option value="false" selected="@(existingValue == "false" ? "selected" : null)">خیر</option>
+                                        </select>
+                                        break;
+                                    default:
+                                        <input type="text" class="form-control" name="AttributeValues[@i].Value" value="@existingValue" />
+                                        break;
+                                }
+                            }
+                        }
+
+                        <input type="hidden" name="AttributeValues[@i].AttributeDefinitionId" value="@attr.Id" />
+                    </div>
+                }
+            }
+            else
+            {
+                <p class="text-muted">هیچ ویژگی‌ای تعریف نشده است.</p>
+            }
+        </div>
+
         <div class="row">
             <div class="col-md-12">
                 <div class="form-group">
